@@ -2,28 +2,26 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: Haoran Liu # 网页标签页上显示的标题
+first_name: Haoran
+middle_name:
+last_name: Liu
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Feel free to reach out to me via email for academic discussions or opportunities.
+description: > 
+  Personal academic website of Haoran Liu. Undergraduate at NEUQ.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+keywords: computer vision, LLM, autonomous driving, deep learning, portfolio # SEO 关键词
+lang: en 
+icon: 🎓 # 网页图标，换成了一个学术帽
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
-impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
-
+url: https://liuhaoran.github.io # 【关键】改成你的真实 GitHub Pages 网址
+baseurl: "" # 【极其关键】必须留空！把原本的 /al-folio 删掉，否则网页样式会崩溃
+last_updated: true # 建议设为 true，底部会显示网站最后更新时间
+impressum_path: 
+back_to_top: true
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
@@ -279,8 +277,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name:Liu
+  first_name: Haoran
 
   style: apa
   locale: en
