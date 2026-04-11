@@ -265,7 +265,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name:Liu
+  last_name: Liu
   first_name: Haoran
 
   style: apa
