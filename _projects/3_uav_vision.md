@@ -1,18 +1,33 @@
 ---
 layout: page
-title: UAV Micro-Object Detection
+title: SR-TOD for Micro-Object Detection in UAV Imagery
 description: SR-TOD framework and DGFE module for complex sea surface environments.
-img: assets/img/1.jpg # 后期可以换成无人机或检测结果图
+img: assets/img/1.jpg
 importance: 3
-category: work
+category: research
 ---
 
 **Role:** Core Developer (University Innovation & Entrepreneurship Project)  
 **Timeline:** 2024 - Present
 
-Addressing the high missed-detection and false-alarm rates in UAV aerial imagery caused by tiny object sizes and complex backgrounds (e.g., sea waves, uneven lighting).
+This project addresses missed detections and false alarms in UAV aerial imagery caused by tiny target size, sea-surface
+background clutter, and severe illumination variation.
 
-#### Core Methodology
-* **Image Preprocessing:** Achieved seamless image stitching using SuperGlue feature matching and weighted average fusion. Introduced the Multi-Scale Retinex (MSR) algorithm to mitigate uneven lighting and cloud occlusion.
-* **SR-TOD Framework:** Proposed the **Self-Reconstruction Tiny Object Detection (SR-TOD)** framework. A lightweight Reconstruction Head was added to the detector's neck to generate difference maps, utilizing the background self-reconstruction variance as prior information for tiny objects.
-* **Feature Enhancement:** Designed the **Difference-Guided Feature Enhancement (DGFE)** module, which uses the difference map as an attention mechanism to guide the network to focus on high-response areas, significantly improving the clarity of tiny object features in deep network layers.
+## Pipeline
+
+The full detection system is designed as a preprocessing-to-representation pipeline that first stabilizes the visual
+signal and then improves tiny-object sensitivity inside the detector.
+
+## Methodology
+
+- **Image preprocessing:** Use SuperGlue matching with weighted fusion for seamless stitching, then apply Multi-Scale
+  Retinex (MSR) to correct uneven lighting and cloud occlusion.
+- **SR-TOD framework:** Introduce the **Self-Reconstruction Tiny Object Detection (SR-TOD)** framework with a
+  lightweight reconstruction head that generates difference maps from background self-reconstruction variance.
+- **Feature enhancement:** Design the **Difference-Guided Feature Enhancement (DGFE)** module so that difference maps
+  act as attention priors for clearer multi-scale target representation.
+
+## Outcome
+
+The resulting framework improves the detector's ability to localize tiny targets in complex maritime scenes while
+keeping the architecture aligned with engineering deployment constraints.

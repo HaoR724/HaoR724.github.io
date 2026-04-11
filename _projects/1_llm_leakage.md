@@ -1,20 +1,33 @@
 ---
 layout: page
-title: LLM Data Leakage Detection
-description: Detecting benchmark contamination using Log-Probability and Isolation Forest.
-img: assets/img/12.jpg # 后期你可以换成大模型架构图
+title: Gray-box Data Leakage Detection in LLM Benchmarks
+description: Detecting benchmark contamination with option restructuring, log-probability analysis, and Isolation Forest.
+img: assets/img/12.jpg
 importance: 1
-category: work
+category: research
 ---
 
 **Role:** Independent Researcher / Core Member  
 **Timeline:** 2024 - Present
 
-The opacity of LLM pre-training data often causes the results of benchmark tests to become unreliable. This project addresses the challenge of detecting benchmark contamination in a gray-box setting.
+This project studies how to detect benchmark contamination when the pre-training data of a large language model is not
+observable. The goal is to recover a more reliable estimate of benchmark validity in a gray-box evaluation setting.
 
-#### Core Methodology
-* **Derivative Sequence Generation:** Leveraged the property that shuffling multiple-choice options does not alter the question's meaning to generate derivative sequences for benchmarks like MMLU and CMMLU.
-* **Log-Probability Analysis:** Obtained the log-probability distribution of these derivative sequences by querying target models (e.g., LLaMA2, Qwen).
-* **Anomaly Detection:** Introduced the **Isolation Forest** algorithm to compute the Outlier Score of the distribution. If a model exhibits an anomalously high log-probability for the original option order, it is confidently flagged as data leakage, effectively addressing complex contamination scenarios where options were deliberately shuffled.
+## Problem Setting
 
-**Outcomes:** Successfully replicated the evaluation on open-source models (Qwen, LLaMA), proving the effectiveness of using log-probability distributions for contamination detection.
+Benchmark scores become unreliable when evaluation questions have already appeared in pre-training corpora. Standard
+gray-box evaluation is especially fragile because it cannot inspect the original training set directly.
+
+## Methodology
+
+- **Derivative sequence generation:** Exploit the fact that shuffling multiple-choice options preserves question
+  semantics, then construct derivative benchmark sequences for MMLU and CMMLU.
+- **Log-probability analysis:** Query target models such as LLaMA 2 and Qwen to obtain the log-probability
+  distribution over the original and reshuffled option orders.
+- **Outlier detection:** Use **Isolation Forest** to score abnormal preference for the original option sequence. An
+  anomalously high score indicates likely contamination even under deliberately scrambled answer options.
+
+## Outcome
+
+The resulting workflow identifies contamination cases that remain difficult for simpler heuristics. It also provides an
+interpretable quantitative signal for comparing benchmark robustness across open-source models.

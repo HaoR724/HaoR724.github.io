@@ -1,0 +1,301 @@
+@use "variables" as v;
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(v.$blue-color, 0.12), transparent 28%),
+    linear-gradient(180deg, #f7fbff 0%, #ffffff 34%, #f3f8ff 100%);
+}
+
+.post .post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(v.$blue-color-dark, 0.08);
+}
+
+.post .desc {
+  color: rgba(v.$blue-color-dark, 0.8);
+  font-size: 1rem;
+}
+
+.navbar {
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid rgba(v.$blue-color-dark, 0.08);
+}
+
+.home-shell {
+  display: grid;
+  gap: 2rem;
+}
+
+.home-subtitle-native {
+  font-weight: 700;
+  color: v.$blue-color-dark;
+}
+
+.home-hero-panel,
+.home-card,
+.home-project {
+  border: 1px solid rgba(v.$blue-color-dark, 0.08);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 50px rgba(v.$blue-color-dark, 0.06);
+}
+
+.home-hero-panel {
+  padding: 2rem;
+  border-radius: 24px;
+}
+
+.home-kicker,
+.home-section-label,
+.home-project__meta {
+  margin: 0 0 0.75rem;
+  color: v.$blue-color;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-lead {
+  margin-bottom: 1rem;
+  color: rgba(v.$black-color, 0.84);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin: 1.5rem 0;
+}
+
+.home-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid v.$blue-color;
+  background: v.$blue-color;
+  color: v.$white-color;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.home-action:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(v.$blue-color-dark, 0.18);
+  color: v.$white-color;
+  background: v.$blue-color-dark;
+}
+
+.home-action--ghost {
+  background: rgba(v.$white-color, 0.96);
+  color: v.$blue-color-dark;
+}
+
+.home-action--ghost:hover {
+  color: v.$white-color;
+}
+
+.home-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-metric {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(v.$blue-color, 0.08), rgba(v.$white-color, 0.95));
+}
+
+.home-metric__value {
+  display: block;
+  color: v.$blue-color-dark;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.home-metric__label {
+  display: block;
+  margin-top: 0.25rem;
+  color: rgba(v.$black-color, 0.6);
+  font-size: 0.85rem;
+}
+
+.home-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.home-section-title {
+  margin: 0;
+  max-width: 720px;
+  color: v.$blue-color-dark;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.7rem;
+  line-height: 1.35;
+}
+
+.home-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.home-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.home-card {
+  padding: 1.4rem;
+  border-radius: 20px;
+}
+
+.home-card h3,
+.home-project h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: v.$blue-color-dark;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.15rem;
+}
+
+.home-card p,
+.home-project p {
+  margin-bottom: 0.75rem;
+  color: rgba(v.$black-color, 0.78);
+  line-height: 1.7;
+}
+
+.home-card--award p {
+  margin-bottom: 0;
+  color: v.$blue-color;
+  font-weight: 600;
+}
+
+.home-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.home-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(v.$blue-color-dark, 0.08);
+  background: rgba(v.$blue-color, 0.08);
+  color: v.$blue-color-dark;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.home-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-project {
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 22px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.home-project:hover {
+  transform: translateY(-3px);
+  border-color: rgba(v.$blue-color, 0.24);
+  box-shadow: 0 22px 40px rgba(v.$blue-color-dark, 0.12);
+}
+
+.home-project:hover h3 {
+  color: v.$blue-color;
+}
+
+.home-news {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-news li {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(v.$blue-color-dark, 0.08);
+  color: rgba(v.$black-color, 0.8);
+}
+
+.home-news li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.home-news span {
+  color: v.$blue-color-dark;
+  font-weight: 700;
+}
+
+.projects .category {
+  margin-top: 2rem;
+  color: v.$blue-color-dark;
+  font-family: "Roboto Slab", serif;
+}
+
+.projects .card,
+.cv .card {
+  border: 1px solid rgba(v.$blue-color-dark, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 14px 32px rgba(v.$blue-color-dark, 0.06);
+}
+
+.cv .card-title {
+  color: v.$blue-color-dark;
+}
+
+@media (max-width: 992px) {
+  .home-grid--two,
+  .home-grid--three,
+  .home-project-grid,
+  .home-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-hero-panel,
+  .home-card,
+  .home-project {
+    padding: 1.2rem;
+    border-radius: 18px;
+  }
+
+  .home-section-title {
+    font-size: 1.4rem;
+  }
+
+  .home-news li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}

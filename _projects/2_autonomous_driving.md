@@ -1,18 +1,33 @@
 ---
 layout: page
-title: Autonomous Driving MPC
-description: U-turn decision making and multi-objective path optimization based on Kalman Filter and MPC.
-img: assets/img/3.jpg # 后期可换成车辆轨迹图
+title: Autonomous Driving U-turn Decision and Path Optimization
+description: Integrated prediction, planning, and control for safe urban U-turn execution.
+img: assets/img/3.jpg
 importance: 2
-category: work
+category: research
 ---
 
 **Role:** Core Algorithm Designer  
 **Timeline:** 2023 - 2024
 
-Constructed an integrated "Perception-Prediction-Decision-Planning-Control" U-turn model for autonomous vehicles in complex two-way, two-lane urban scenarios.
+Constructed an integrated perception-prediction-decision-planning-control pipeline for autonomous vehicles in complex
+two-way, two-lane urban U-turn scenarios.
 
-#### Core Methodology
-* **Prediction & Decision:** Utilized **Kalman Filter** for high-precision short-term trajectory prediction of dynamic obstacles, simulating velocity uncertainty via process noise covariance. Formulated a dynamic safety window using Time-to-Collision (TTC) and spatial distance to output safe U-turn timing.
-* **Path Planning:** Employed cubic **Bézier curves** to ensure trajectory continuity. Applied the Analytic Hierarchy Process (AHP) to convert multi-objectives (total time, lateral acceleration fluctuation, obstacle distance) into a single objective function, optimizing for both safety (62.7% weight) and comfort.
-* **Dynamic Control:** Established a four-level risk response mechanism. Solved constrained quadratic programming problems using **Model Predictive Control (MPC)** algorithms for local trajectory fine-tuning (low risk) and emergency braking (high risk).
+## System Design
+
+The model couples environmental understanding, dynamic risk assessment, multi-objective trajectory generation, and
+closed-loop control so that the vehicle can decide when and how to execute a U-turn under moving-traffic constraints.
+
+## Methodology
+
+- **Prediction and decision:** Use **Kalman Filter** to predict short-term trajectories of dynamic obstacles while
+  incorporating process-noise uncertainty. Safety windows are quantified by Time-to-Collision and spatial distance.
+- **Path planning:** Generate smooth trajectories with cubic **Bezier** curves, then apply Analytic Hierarchy Process
+  to combine safety, comfort, and efficiency into a single optimization objective.
+- **Dynamic control:** Build a four-level risk response mechanism and solve constrained optimization problems with
+  **Model Predictive Control (MPC)** for trajectory refinement and emergency braking.
+
+## Outcome
+
+The final pipeline provides a coherent decision-to-control path for handling complex U-turn execution with explicit
+risk reasoning and smoother trajectory generation.
