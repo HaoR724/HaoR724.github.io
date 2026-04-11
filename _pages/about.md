@@ -41,14 +41,6 @@ latest_posts:
     <div class="home-actions">
       <a class="home-action" href="{{ '/projects/' | relative_url }}">View Research</a>
       <a class="home-action home-action--ghost" href="{{ '/cv/' | relative_url }}">Open CV</a>
-      <a
-        class="home-action home-action--ghost"
-        href="{{ '/assets/pdf/Haoran_Liu_CV.pdf' | relative_url }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Download CV
-      </a>
     </div>
     <div class="home-metrics">
       <div class="home-metric">
