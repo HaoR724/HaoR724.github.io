@@ -43,7 +43,7 @@ latest_posts:
       <a class="home-action home-action--ghost" href="{{ '/cv/' | relative_url }}">Open CV</a>
       <a
         class="home-action home-action--ghost"
-        href="{{ '/assets/rendercv/rendercv_output/Haoran_Liu_CV.pdf' | relative_url }}"
+        href="{{ '/assets/pdf/Haoran_Liu_CV.pdf' | relative_url }}"
         target="_blank"
         rel="noopener noreferrer"
       >
