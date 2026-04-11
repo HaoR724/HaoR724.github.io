@@ -30,7 +30,7 @@ cv:
         position: Undergraduate Researcher
         location: Qinhuangdao, China
         start_date: 2024
-        end_date: Present
+        end_date: present
         summary: Conducting project-based research in LLM evaluation, UAV micro-object detection, and autonomous driving planning.
         highlights:
           - Investigated gray-box benchmark contamination detection through option restructuring, log-probability analysis, and Isolation Forest.
