@@ -31,9 +31,9 @@ latest_posts:
       </p>
       <div class="home-actions">
         <a class="home-action" href="{{ '/projects/' | relative_url }}">查看项目</a>
-        <a class="home-action home-action--ghost" href="{{ '/cv/' | relative_url }}">查看简历</a>
+        <a class="home-action" href="{{ '/cv/' | relative_url }}">查看简历</a>
         <a
-          class="home-action home-action--ghost"
+          class="home-action"
           href="{{ '/assets/pdf/刘浩然简历.pdf' | relative_url }}"
           target="_blank"
           rel="noopener noreferrer"
