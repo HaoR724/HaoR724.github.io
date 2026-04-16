@@ -114,16 +114,6 @@ latest_posts:
           能更直观地展示方法细节与效果。
         </p>
       </a>
-      <a class="home-project" href="{% link _projects/3_uav_vision.md %}">
-        <p class="home-project__meta">大学生创新创业项目 / 核心开发</p>
-        <h3>面向无人机图像的微小目标检测 SR-TOD</h3>
-        <p>
-          面向海面浪花、反光与复杂背景下的无人机微小目标检测问题，设计高精度视觉检测框架。
-        </p>
-        <p>
-          管线融合 SuperGlue 拼接、MSR 光照校正、SR-TOD 检测框架与 DGFE 特征增强模块，提升复杂场景下的目标表达能力。
-        </p>
-      </a>
       <a class="home-project" href="{% link _projects/2_autonomous_driving.md %}">
         <p class="home-project__meta">核心算法设计</p>
         <h3>自动驾驶掉头决策与路径优化</h3>
@@ -132,6 +122,16 @@ latest_posts:
         </p>
         <p>
           结合 Kalman Filter、TTC 安全窗、Bezier 曲线与 MPC，实现兼顾安全性、舒适性与实时性的掉头控制策略。
+        </p>
+      </a>
+      <a class="home-project" href="{% link _projects/3_uav_vision.md %}">
+        <p class="home-project__meta">大学生创新创业项目 / 核心开发</p>
+        <h3>面向无人机图像的微小目标检测 SR-TOD</h3>
+        <p>
+          面向海面浪花、反光与复杂背景下的无人机微小目标检测问题，设计高精度视觉检测框架。
+        </p>
+        <p>
+          管线融合 SuperGlue 拼接、MSR 光照校正、SR-TOD 检测框架与 DGFE 特征增强模块，提升复杂场景下的目标表达能力。
         </p>
       </a>
     </div>

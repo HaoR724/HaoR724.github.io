@@ -48,7 +48,7 @@ body {
 
 .home-hero-panel--with-profile {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.9fr);
+  grid-template-columns: minmax(0, 1.85fr) minmax(180px, 0.55fr);
   gap: 1.5rem;
   align-items: stretch;
 }
@@ -71,6 +71,8 @@ body {
   display: grid;
   gap: 1rem;
   align-content: start;
+  justify-self: end;
+  width: min(100%, 220px);
   padding: 1rem;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(v.$blue-color, 0.1), rgba(v.$white-color, 0.96));
@@ -80,7 +82,7 @@ body {
 .home-profile-image {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1.16;
   object-fit: cover;
   object-position: center 20%;
   border-radius: 18px;
@@ -377,6 +379,11 @@ body {
 
   .project-gallery--two {
     grid-template-columns: 1fr;
+  }
+
+  .home-profile-card {
+    justify-self: stretch;
+    width: 100%;
   }
 }
 
