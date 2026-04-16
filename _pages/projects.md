@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Research
+title: 项目
 permalink: /projects/
-description: Selected research and engineering projects in LLM evaluation, UAV imagery, and autonomous driving.
+description: 大模型评测、无人机视觉与自动驾驶方向的代表性项目与研究工作。
 nav: true
 nav_order: 2
 display_categories: [research]
 horizontal: true
 ---
 
-This page collects representative research projects around reliable LLM evaluation, tiny-object detection for UAV
-imagery, and planning-and-control systems for autonomous driving.
+这里汇总了我当前较有代表性的科研与工程项目，涵盖大模型基准污染检测、无人机场景微小目标检测，以及自动驾驶
+规划控制系统。
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

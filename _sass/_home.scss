@@ -46,6 +46,62 @@ body {
   border-radius: 24px;
 }
 
+.home-hero-panel--with-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.9fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.home-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-hero-title {
+  margin: 0 0 1rem;
+  color: v.$blue-color-dark;
+  font-family: "Roboto Slab", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.home-profile-card {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+  padding: 1rem;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(v.$blue-color, 0.1), rgba(v.$white-color, 0.96));
+  border: 1px solid rgba(v.$blue-color-dark, 0.1);
+}
+
+.home-profile-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 18px;
+  box-shadow: 0 14px 36px rgba(v.$blue-color-dark, 0.12);
+}
+
+.home-profile-info {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.home-profile-info p {
+  margin: 0;
+  color: rgba(v.$black-color, 0.8);
+  line-height: 1.6;
+}
+
+.home-profile-info a {
+  word-break: break-all;
+}
+
 .home-kicker,
 .home-section-label,
 .home-project__meta {
@@ -209,6 +265,20 @@ body {
   gap: 1rem;
 }
 
+.home-project__gallery {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 18px;
+}
+
+.home-project__gallery img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .home-project {
   display: block;
   height: 100%;
@@ -262,6 +332,29 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+.project-gallery {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.project-gallery img {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(v.$blue-color-dark, 0.08);
+  box-shadow: 0 14px 30px rgba(v.$blue-color-dark, 0.08);
+}
+
+.project-gallery--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-gallery--hero img {
+  max-height: 520px;
+  object-fit: cover;
+}
+
 .projects .card,
 .cv .card {
   border: 1px solid rgba(v.$blue-color-dark, 0.08);
@@ -274,10 +367,15 @@ body {
 }
 
 @media (max-width: 992px) {
+  .home-hero-panel--with-profile,
   .home-grid--two,
   .home-grid--three,
   .home-project-grid,
   .home-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery--two {
     grid-template-columns: 1fr;
   }
 }
@@ -292,6 +390,23 @@ body {
 
   .home-section-title {
     font-size: 1.4rem;
+  }
+
+  .home-hero-title {
+    font-size: 2rem;
+  }
+
+  .home-profile-card {
+    padding: 0.85rem;
+  }
+
+  .home-profile-image {
+    aspect-ratio: 1 / 1.08;
+    object-position: center 16%;
+  }
+
+  .home-project__gallery img {
+    height: 170px;
   }
 
   .home-news li {

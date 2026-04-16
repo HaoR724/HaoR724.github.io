@@ -1,33 +1,30 @@
 ---
 layout: page
-title: Autonomous Driving U-turn Decision and Path Optimization
-description: Integrated prediction, planning, and control for safe urban U-turn execution.
+title: 自动驾驶掉头决策与路径优化
+description: 面向城市复杂场景的预测、规划与控制一体化方法。
 img: assets/img/3.jpg
 importance: 2
 category: research
 ---
 
-**Role:** Core Algorithm Designer  
-**Timeline:** 2023 - 2024
+**角色：** 核心算法设计  
+**时间：** 2023 - 2024
 
-Constructed an integrated perception-prediction-decision-planning-control pipeline for autonomous vehicles in complex
-two-way, two-lane urban U-turn scenarios.
+面向双向双车道城市道路中的复杂掉头场景，构建感知、预测、决策、规划、控制一体化自动驾驶模型。
 
-## System Design
+## 系统设计
 
-The model couples environmental understanding, dynamic risk assessment, multi-objective trajectory generation, and
-closed-loop control so that the vehicle can decide when and how to execute a U-turn under moving-traffic constraints.
+系统围绕环境理解、动态风险评估、多目标轨迹生成与闭环控制展开，使车辆能够在动态交通流约束下判断何时掉头、
+如何掉头，并在执行过程中持续修正轨迹。
 
-## Methodology
+## 方法设计
 
-- **Prediction and decision:** Use **Kalman Filter** to predict short-term trajectories of dynamic obstacles while
-  incorporating process-noise uncertainty. Safety windows are quantified by Time-to-Collision and spatial distance.
-- **Path planning:** Generate smooth trajectories with cubic **Bezier** curves, then apply Analytic Hierarchy Process
-  to combine safety, comfort, and efficiency into a single optimization objective.
-- **Dynamic control:** Build a four-level risk response mechanism and solve constrained optimization problems with
-  **Model Predictive Control (MPC)** for trajectory refinement and emergency braking.
+- **预测与决策：** 使用 **Kalman Filter** 预测动态障碍物短时轨迹，并将过程噪声不确定性纳入建模；通过 TTC
+  与空间距离联合量化安全窗口。
+- **路径规划：** 基于三次 **Bezier** 曲线生成平滑轨迹，再通过层次分析法综合安全性、舒适性与效率等目标。
+- **动态控制：** 设计四级风险响应机制，采用 **Model Predictive Control (MPC)** 完成轨迹跟踪修正与紧急制动。
 
-## Outcome
+## 项目结果
 
-The final pipeline provides a coherent decision-to-control path for handling complex U-turn execution with explicit
-risk reasoning and smoother trajectory generation.
+最终系统形成了从风险评估到轨迹生成再到控制执行的完整链路，在复杂掉头任务中兼顾了可解释的安全推理与更平滑
+的轨迹输出。

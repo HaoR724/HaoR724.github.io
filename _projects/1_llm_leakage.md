@@ -1,33 +1,51 @@
 ---
 layout: page
-title: Gray-box Data Leakage Detection in LLM Benchmarks
-description: Detecting benchmark contamination with option restructuring, log-probability analysis, and Isolation Forest.
-img: assets/img/12.jpg
+title: 大模型基准测试中的数据泄漏检测
+description: 通过选项重构、log-probability 分析与 Isolation Forest 识别基准污染。
+img: assets/img/llm-leakage-logprob.png
 importance: 1
 category: research
 ---
 
-**Role:** Independent Researcher / Core Member  
-**Timeline:** 2024 - Present
+**角色：** 独立研究 / 核心成员  
+**时间：** 2024 - 至今
 
-This project studies how to detect benchmark contamination when the pre-training data of a large language model is not
-observable. The goal is to recover a more reliable estimate of benchmark validity in a gray-box evaluation setting.
+本项目关注在大语言模型预训练数据不可观测的灰盒场景下，如何识别基准测试中的潜在数据污染问题。目标是为
+MMLU、CMMLU 等 benchmark 提供更加可靠的有效性评估依据。
 
-## Problem Setting
+## 研究问题
 
-Benchmark scores become unreliable when evaluation questions have already appeared in pre-training corpora. Standard
-gray-box evaluation is especially fragile because it cannot inspect the original training set directly.
+当评测题目已经在预训练语料中出现时，benchmark 分数会显著高估模型真实能力。由于灰盒评测无法直接访问训练
+语料，因此需要构造一种间接但稳定的检测方法。
 
-## Methodology
+## 方法设计
 
-- **Derivative sequence generation:** Exploit the fact that shuffling multiple-choice options preserves question
-  semantics, then construct derivative benchmark sequences for MMLU and CMMLU.
-- **Log-probability analysis:** Query target models such as LLaMA 2 and Qwen to obtain the log-probability
-  distribution over the original and reshuffled option orders.
-- **Outlier detection:** Use **Isolation Forest** to score abnormal preference for the original option sequence. An
-  anomalously high score indicates likely contamination even under deliberately scrambled answer options.
+- **衍生序列构造：** 利用选择题打乱选项后语义保持不变的特性，为 MMLU 与 CMMLU 构造多组衍生序列。
+- **对数概率分析：** 通过 LLaMA 2、Qwen 等目标模型提取原始顺序与重排顺序下的 log-probability 分布。
+- **异常值检测：** 使用 **Isolation Forest** 对原始顺序的异常偏好进行打分，在刻意打乱正确选项后仍能识别污染样本。
 
-## Outcome
+## 研究过程图
 
-The resulting workflow identifies contamination cases that remain difficult for simpler heuristics. It also provides an
-interpretable quantitative signal for comparing benchmark robustness across open-source models.
+<div class="project-gallery project-gallery--hero">
+  <img src="{{ '/assets/img/llm-leakage-logprob.png' | relative_url }}" alt="不同选项顺序下的对数概率分布">
+</div>
+
+<div class="project-gallery project-gallery--two">
+  <img src="{{ '/assets/img/llm-leakage-outlier.png' | relative_url }}" alt="异常顺序识别结果">
+  <img src="{{ '/assets/img/llm-leakage-leaderboard.png' | relative_url }}" alt="LLM benchmark 泄漏排行榜">
+</div>
+
+<div class="project-gallery project-gallery--two">
+  <img src="{{ '/assets/img/llm-leakage-case-a.png' | relative_url }}" alt="scenario a 案例分析">
+  <img src="{{ '/assets/img/llm-leakage-case-b.png' | relative_url }}" alt="scenario b 案例分析">
+</div>
+
+<div class="project-gallery project-gallery--two">
+  <img src="{{ '/assets/img/llm-leakage-results-a.png' | relative_url }}" alt="scenario a 实验结果">
+  <img src="{{ '/assets/img/llm-leakage-results-b.png' | relative_url }}" alt="scenario b 实验结果">
+</div>
+
+## 项目结果
+
+该方法能够识别许多传统启发式策略难以覆盖的污染样本，并提供具有可解释性的量化信号，用于比较不同开源模型在
+benchmark 上的鲁棒性与污染风险。

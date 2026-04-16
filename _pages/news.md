@@ -1,17 +1,17 @@
 ---
 layout: page
-title: News
+title: 动态
 permalink: /news/
-description: Selected academic updates, scholarships, and competition awards.
+description: 近期奖项、竞赛与学术进展记录。
 nav: true
 nav_order: 3
 ---
 
-## Selected Updates
+## 最新动态
 
-- **[2025.10]** Awarded the University Comprehensive Third-Class Scholarship.
-- **[2025.04]** Awarded the University Comprehensive First-Class Scholarship.
-- **[2025.04]** Awarded the Innovation and Entrepreneurship Scholarship.
-- **[2024]** Awarded the University Comprehensive First-Class Scholarship.
-- **[2024]** Won Provincial First Prize in the National College Mathematical Modeling Contest.
-- **[2024]** Won Provincial Second Prize in the National College Mathematical Modeling Contest.
+- **[2025.10]** 获东北大学秦皇岛分校综合三等奖学金。
+- **[2025.04]** 获综合一等奖学金。
+- **[2025.04]** 获创新创业奖学金。
+- **[2024]** 获综合一等奖学金。
+- **[2024]** 获全国大学生数学建模竞赛省级一等奖。
+- **[2024]** 获全国大学生数学建模竞赛省级二等奖。

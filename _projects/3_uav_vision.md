@@ -1,33 +1,29 @@
 ---
 layout: page
-title: SR-TOD for Micro-Object Detection in UAV Imagery
-description: SR-TOD framework and DGFE module for complex sea surface environments.
+title: 面向无人机图像的微小目标检测 SR-TOD
+description: 面向复杂海面环境的 SR-TOD 框架与 DGFE 模块设计。
 img: assets/img/1.jpg
 importance: 3
 category: research
 ---
 
-**Role:** Core Developer (University Innovation & Entrepreneurship Project)  
-**Timeline:** 2024 - Present
+**角色：** 核心开发（大学生创新创业项目）  
+**时间：** 2024 - 至今
 
-This project addresses missed detections and false alarms in UAV aerial imagery caused by tiny target size, sea-surface
-background clutter, and severe illumination variation.
+本项目面向无人机航拍场景中因目标尺度极小、海面背景复杂、光照变化剧烈而导致的漏检与误检问题，设计高精度
+检测框架。
 
-## Pipeline
+## 系统流程
 
-The full detection system is designed as a preprocessing-to-representation pipeline that first stabilizes the visual
-signal and then improves tiny-object sensitivity inside the detector.
+整体系统采用“预处理增强 + 表征提升 + 检测重建”的思路，先稳定视觉信号，再提升检测器对微小目标的敏感性。
 
-## Methodology
+## 方法设计
 
-- **Image preprocessing:** Use SuperGlue matching with weighted fusion for seamless stitching, then apply Multi-Scale
-  Retinex (MSR) to correct uneven lighting and cloud occlusion.
-- **SR-TOD framework:** Introduce the **Self-Reconstruction Tiny Object Detection (SR-TOD)** framework with a
-  lightweight reconstruction head that generates difference maps from background self-reconstruction variance.
-- **Feature enhancement:** Design the **Difference-Guided Feature Enhancement (DGFE)** module so that difference maps
-  act as attention priors for clearer multi-scale target representation.
+- **图像预处理：** 基于 SuperGlue 匹配和加权融合完成无缝拼接，再结合 Multi-Scale Retinex (MSR) 进行光照校正。
+- **SR-TOD 框架：** 提出 **Self-Reconstruction Tiny Object Detection (SR-TOD)** 框架，引入轻量级重建头，利用背景
+  自重建差异生成差分图。
+- **特征增强：** 设计 **Difference-Guided Feature Enhancement (DGFE)** 模块，将差分图作为注意力先验强化多尺度特征。
 
-## Outcome
+## 项目结果
 
-The resulting framework improves the detector's ability to localize tiny targets in complex maritime scenes while
-keeping the architecture aligned with engineering deployment constraints.
+最终框架提升了复杂海面场景下微小目标的定位能力，同时保持了较好的工程部署可行性与模块化扩展能力。
