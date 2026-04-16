@@ -6,13 +6,13 @@ first_name: Haoran
 middle_name:
 last_name: Liu
 contact_note: >
-  Open to research discussions, collaborations, and graduate opportunities in AI, computer vision, and autonomous driving.
+  欢迎围绕人工智能、计算机视觉与自动驾驶方向进行学术交流、科研合作与研究生申请沟通。
 description: > 
-  Academic homepage of Haoran Liu, an undergraduate researcher at Northeastern University at Qinhuangdao working on LLM evaluation, computer vision, and autonomous driving.
+  刘浩然的学术个人主页，聚焦大模型评测、计算机视觉与自动驾驶方向的科研与项目实践。
 footer_text: >
-  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and deployed on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: haoran liu, artificial intelligence, large language models, computer vision, autonomous driving, neuq
-lang: en
+  基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建，并部署于 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>。
+keywords: 刘浩然, Haoran Liu, 人工智能, 大语言模型, 计算机视觉, 自动驾驶, 东北大学秦皇岛分校
+lang: zh-CN
 icon: ""
 
 url: https://HaoR724.github.io  # 注意：这里改成了你真正的网址！

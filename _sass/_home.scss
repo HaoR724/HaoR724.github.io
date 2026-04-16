@@ -72,7 +72,7 @@ body {
   gap: 1rem;
   align-content: start;
   justify-self: end;
-  width: min(100%, 220px);
+  width: min(100%, 180px);
   padding: 1rem;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(v.$blue-color, 0.1), rgba(v.$white-color, 0.96));
@@ -382,8 +382,8 @@ body {
   }
 
   .home-profile-card {
-    justify-self: stretch;
-    width: 100%;
+    justify-self: center;
+    width: min(100%, 180px);
   }
 }
 

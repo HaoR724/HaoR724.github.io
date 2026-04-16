@@ -103,7 +103,7 @@ latest_posts:
         <div class="home-project__gallery home-project__gallery--single">
           <img src="{{ '/assets/img/llm-leakage-logprob.png' | relative_url }}" alt="LLM benchmark data leakage figure">
         </div>
-        <p class="home-project__meta">独立研究 / 核心成员</p>
+        <p class="home-project__meta">核心成员</p>
         <h3>大模型基准测试中的数据泄漏检测</h3>
         <p>
           面向预训练数据不可观测的灰盒场景，研究如何通过重构选择题选项顺序与分析 log-probability 分布，

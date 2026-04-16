@@ -1,11 +1,11 @@
 cv:
   name: Haoran Liu
-  label: Undergraduate Student in Computer Science and Technology
+  label: 计算机科学与技术专业本科生
   email: liuhaoran@stu.neuq.edu.cn
   website: https://HaoR724.github.io
   image: ""
   summary: >
-    Undergraduate researcher at Northeastern University at Qinhuangdao with a GPA of 4.06/5.00 and a top-7% rank in the major. My work focuses on large language model evaluation, computer vision for micro-object detection, and planning-and-control methods for autonomous driving. I am actively seeking Master's and Ph.D. opportunities.
+    东北大学秦皇岛分校计算机科学与技术专业本科生，GPA 为 4.06/5.00，专业排名前 7%。目前主要围绕大模型评测、微小目标检测与自动驾驶规划控制开展研究与项目实践，正在积极申请硕士与博士阶段的科研机会。
 
   address:
     city: Qinhuangdao
@@ -15,69 +15,69 @@ cv:
   sections:
     Education:
       - institution: Northeastern University at Qinhuangdao (NEUQ)
-        location: Qinhuangdao, China
-        area: Computer Science and Technology
-        studyType: B.Eng.
+        location: 中国秦皇岛
+        area: 计算机科学与技术
+        studyType: 工学学士
         start_date: 2022
         end_date: 2026
         highlights:
-          - Top 7% of the major with GPA 4.06/5.00.
-          - CET-6 score 555.
-          - Research interests in artificial intelligence, computer vision, and autonomous driving.
+          - 专业排名前 7%，GPA 为 4.06/5.00。
+          - 英语六级成绩 555。
+          - 研究兴趣包括人工智能、计算机视觉与自动驾驶。
 
     Experience:
       - company: Northeastern University at Qinhuangdao
-        position: Undergraduate Researcher
-        location: Qinhuangdao, China
+        position: 本科科研成员
+        location: 中国秦皇岛
         start_date: 2024
-        end_date: present
-        summary: Conducting project-based research in LLM evaluation, UAV micro-object detection, and autonomous driving planning.
+        end_date: 至今
+        summary: 参与大模型评测、无人机微小目标检测与自动驾驶规划控制方向的项目制研究。
         highlights:
-          - Investigated gray-box benchmark contamination detection through option restructuring, log-probability analysis, and Isolation Forest.
-          - Developed the SR-TOD framework and DGFE module to improve tiny-object detection in complex maritime UAV imagery.
-          - Designed an integrated U-turn decision, path optimization, and MPC control pipeline for urban autonomous driving.
+          - 通过选项重构、log-probability 分析与 Isolation Forest 研究灰盒场景下的大模型 benchmark 污染检测。
+          - 设计 SR-TOD 框架与 DGFE 模块，提升复杂海面无人机场景中的微小目标检测能力。
+          - 构建面向城市复杂掉头场景的一体化自动驾驶决策、路径优化与 MPC 控制流程。
 
     Academic Interests:
-      - name: Research Areas
+      - name: 研究方向
         icon: fa-solid fa-book-open
         keywords:
-          - Artificial Intelligence
-          - Large Language Models
-          - Computer Vision
-          - Tiny Object Detection
-          - Autonomous Driving
+          - 人工智能
+          - 大语言模型
+          - 计算机视觉
+          - 微小目标检测
+          - 自动驾驶
 
     Awards:
-      - title: University Comprehensive Third-Class Scholarship
+      - title: 综合三等奖学金
         awarder: Northeastern University at Qinhuangdao
         date: 2025
-        summary: Awarded in October 2025.
-      - title: University Comprehensive First-Class Scholarship
+        summary: 2025 年 10 月获奖。
+      - title: 综合一等奖学金
         awarder: Northeastern University at Qinhuangdao
         date: 2025
-        summary: Awarded in April 2025.
-      - title: Innovation and Entrepreneurship Scholarship
+        summary: 2025 年 4 月获奖。
+      - title: 创新创业奖学金
         awarder: Northeastern University at Qinhuangdao
         date: 2025
-        summary: Awarded in April 2025.
-      - title: University Comprehensive First-Class Scholarship
+        summary: 2025 年 4 月获奖。
+      - title: 综合一等奖学金
         awarder: Northeastern University at Qinhuangdao
         date: 2024
-      - title: National College Mathematical Modeling Contest, Provincial First Prize
-        awarder: China Undergraduate Mathematical Contest in Modeling
+      - title: 全国大学生数学建模竞赛省级一等奖
+        awarder: 中国大学生数学建模竞赛
         date: 2024
-      - title: National College Mathematical Modeling Contest, Provincial Second Prize
-        awarder: China Undergraduate Mathematical Contest in Modeling
+      - title: 全国大学生数学建模竞赛省级二等奖
+        awarder: 中国大学生数学建模竞赛
         date: 2024
 
     Skills:
-      - name: Programming Languages
+      - name: 编程语言
         icon: fa-solid fa-code
         keywords:
           - C/C++
           - Python
           - Java
-      - name: AI and Computer Vision
+      - name: 人工智能与计算机视觉
         icon: fa-solid fa-microchip
         keywords:
           - PyTorch
@@ -85,7 +85,7 @@ cv:
           - Isolation Forest
           - Kalman Filter
           - Model Predictive Control
-      - name: Tools and Utilities
+      - name: 工具与环境
         icon: fa-solid fa-screwdriver-wrench
         keywords:
           - MATLAB
@@ -93,27 +93,27 @@ cv:
           - Git
 
     Languages:
-      - name: Chinese
-        summary: Native speaker
-      - name: English
-        summary: CET-6 555; strong academic reading and technical writing ability
+      - name: 中文
+        summary: 母语
+      - name: 英语
+        summary: 英语六级 555，具备较强的学术阅读与技术写作能力
 
     Projects:
-      - name: Gray-box Data Leakage Detection in LLM Benchmarks
-        summary: Investigated the reliability of benchmark evaluation under opaque pre-training data conditions.
+      - name: 大模型基准测试中的数据泄漏检测
+        summary: 面向预训练数据不可观测场景，研究 benchmark 评测可靠性问题。
         highlights:
-          - Generated derivative benchmark sequences for MMLU and CMMLU through multiple-choice option restructuring.
-          - Queried target models such as LLaMA 2 and Qwen for log-probability distributions.
-          - Applied Isolation Forest to identify contaminated cases under deliberate option scrambling.
-      - name: SR-TOD for Micro-Object Detection in UAV Imagery
-        summary: Built a high-precision visual detection pipeline for tiny objects under waves, glare, and uneven illumination.
+          - 通过多项选择题选项重构，为 MMLU 与 CMMLU 构造衍生 benchmark 序列。
+          - 调用 LLaMA 2、Qwen 等模型提取不同顺序下的 log-probability 分布。
+          - 使用 Isolation Forest 识别刻意扰乱选项后的潜在污染样本。
+      - name: 自动驾驶掉头决策与路径优化
+        summary: 面向复杂城市掉头场景，构建感知、预测、决策、规划、控制一体化流程。
         highlights:
-          - Combined SuperGlue-based stitching with weighted fusion and Multi-Scale Retinex preprocessing.
-          - Proposed the Self-Reconstruction Tiny Object Detection framework with a lightweight reconstruction head.
-          - Designed the Difference-Guided Feature Enhancement module to improve multi-scale feature discrimination.
-      - name: Autonomous Driving U-turn Decision and Path Optimization
-        summary: Constructed a perception-prediction-decision-planning-control pipeline for complex urban U-turn scenarios.
+          - 使用 Kalman Filter 预测动态障碍物轨迹，并结合 Time-to-Collision 量化安全窗口。
+          - 基于三次 Bezier 曲线与层次分析法生成兼顾安全与舒适性的平滑轨迹。
+          - 使用 Model Predictive Control 完成低风险轨迹修正与高风险紧急制动。
+      - name: 面向无人机图像的微小目标检测 SR-TOD
+        summary: 面向复杂海面背景与光照变化，构建高精度微小目标视觉检测框架。
         highlights:
-          - Predicted dynamic obstacles with Kalman Filter and quantified safety margins with Time-to-Collision.
-          - Planned smooth trajectories with cubic Bezier curves and Analytic Hierarchy Process.
-          - Used Model Predictive Control for low-risk trajectory refinement and high-risk emergency braking.
+          - 融合 SuperGlue 图像拼接、加权融合与 Multi-Scale Retinex 预处理流程。
+          - 提出 Self-Reconstruction Tiny Object Detection 框架，并设计轻量级重建头。
+          - 设计 Difference-Guided Feature Enhancement 模块，增强多尺度特征表达能力。

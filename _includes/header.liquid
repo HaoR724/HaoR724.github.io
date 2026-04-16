@@ -32,9 +32,9 @@
         data-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Toggle navigation"
+        aria-label="切换导航菜单"
       >
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">切换导航菜单</span>
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -46,12 +46,12 @@
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
 
-          <!-- About -->
+          <!-- Home -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
               {{- about_title }}
               {% if page.permalink == '/' %}
-                <span class="sr-only">(current)</span>
+                <span class="sr-only">（当前页）</span>
               {% endif %}
             </a>
           </li>
@@ -79,7 +79,7 @@
                   >
                     {{- p.title }}
                     {% if page.title == p.title or has_active_child %}
-                      <span class="sr-only">(current)</span>
+                      <span class="sr-only">（当前页）</span>
                     {% endif %}
                   </a>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -110,7 +110,7 @@
                   <a class="nav-link" href="{{ url | relative_url }}">
                     {{- p.title }}
                     {% if page.url contains p.url %}
-                      <span class="sr-only">(current)</span>
+                      <span class="sr-only">（当前页）</span>
                     {% endif %}
                   </a>
                 </li>
@@ -120,7 +120,7 @@
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+              <button id="search-toggle" title="搜索" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
               </button>
             </li>

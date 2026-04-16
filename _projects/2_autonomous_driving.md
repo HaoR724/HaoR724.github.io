@@ -4,7 +4,7 @@ title: 自动驾驶掉头决策与路径优化
 description: 面向城市复杂场景的预测、规划与控制一体化方法。
 img: assets/img/3.jpg
 importance: 2
-category: research
+category: 科研项目
 ---
 
 **角色：** 核心算法设计  

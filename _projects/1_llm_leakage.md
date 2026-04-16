@@ -4,10 +4,10 @@ title: 大模型基准测试中的数据泄漏检测
 description: 通过选项重构、log-probability 分析与 Isolation Forest 识别基准污染。
 img: assets/img/llm-leakage-logprob.png
 importance: 1
-category: research
+category: 科研项目
 ---
 
-**角色：** 独立研究 / 核心成员  
+**角色：** 核心成员  
 **时间：** 2024 - 至今
 
 本项目关注在大语言模型预训练数据不可观测的灰盒场景下，如何识别基准测试中的潜在数据污染问题。目标是为

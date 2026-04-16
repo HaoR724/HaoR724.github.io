@@ -4,7 +4,7 @@ title: 面向无人机图像的微小目标检测 SR-TOD
 description: 面向复杂海面环境的 SR-TOD 框架与 DGFE 模块设计。
 img: assets/img/1.jpg
 importance: 3
-category: research
+category: 科研项目
 ---
 
 **角色：** 核心开发（大学生创新创业项目）  

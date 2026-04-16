@@ -5,7 +5,7 @@ permalink: /projects/
 description: 大模型评测、无人机视觉与自动驾驶方向的代表性项目与研究工作。
 nav: true
 nav_order: 2
-display_categories: [research]
+display_categories: [科研项目]
 horizontal: true
 ---
 
