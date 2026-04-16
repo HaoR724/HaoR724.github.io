@@ -1,6 +1,6 @@
 ---
 layout: about
-title: home
+title: 首页
 permalink: /
 subtitle: >
   东北大学秦皇岛分校 计算机科学与技术专业 本科生
