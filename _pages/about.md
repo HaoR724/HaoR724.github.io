@@ -197,13 +197,13 @@ latest_posts:
           <h3>奖状展示</h3>
           <p>参考横向滚动展示方式，支持左右按钮切换，移动端可直接滑动查看。</p>
         </div>
-        <p class="award-carousel__hint">共 3 张</p>
+        <p class="award-carousel__hint">共 6 张</p>
       </div>
       <div class="award-carousel__viewport">
         <article class="award-carousel__slide" id="award-slide-1">
           <div class="award-carousel__controls">
-            <a class="award-carousel__arrow" href="#award-slide-3" aria-label="上一张奖状">‹</a>
-            <span class="award-carousel__page">1 / 3</span>
+            <a class="award-carousel__arrow" href="#award-slide-6" aria-label="上一张奖状">‹</a>
+            <span class="award-carousel__page">1 / 6</span>
             <a class="award-carousel__arrow" href="#award-slide-2" aria-label="下一张奖状">›</a>
           </div>
           <div class="award-carousel__frame">
@@ -214,7 +214,7 @@ latest_posts:
         <article class="award-carousel__slide" id="award-slide-2">
           <div class="award-carousel__controls">
             <a class="award-carousel__arrow" href="#award-slide-1" aria-label="上一张奖状">‹</a>
-            <span class="award-carousel__page">2 / 3</span>
+            <span class="award-carousel__page">2 / 6</span>
             <a class="award-carousel__arrow" href="#award-slide-3" aria-label="下一张奖状">›</a>
           </div>
           <div class="award-carousel__frame">
@@ -225,13 +225,46 @@ latest_posts:
         <article class="award-carousel__slide" id="award-slide-3">
           <div class="award-carousel__controls">
             <a class="award-carousel__arrow" href="#award-slide-2" aria-label="上一张奖状">‹</a>
-            <span class="award-carousel__page">3 / 3</span>
-            <a class="award-carousel__arrow" href="#award-slide-1" aria-label="下一张奖状">›</a>
+            <span class="award-carousel__page">3 / 6</span>
+            <a class="award-carousel__arrow" href="#award-slide-4" aria-label="下一张奖状">›</a>
           </div>
           <div class="award-carousel__frame">
             <img src="{{ '/assets/img/award-third-class-scholarship.jpg' | relative_url }}" alt="东北大学秦皇岛分校三等奖学金证书">
           </div>
           <p class="award-carousel__caption">东北大学秦皇岛分校三等奖学金证书，2024-2025 学年第二学期。</p>
+        </article>
+        <article class="award-carousel__slide" id="award-slide-4">
+          <div class="award-carousel__controls">
+            <a class="award-carousel__arrow" href="#award-slide-3" aria-label="上一张奖状">‹</a>
+            <span class="award-carousel__page">4 / 6</span>
+            <a class="award-carousel__arrow" href="#award-slide-5" aria-label="下一张奖状">›</a>
+          </div>
+          <div class="award-carousel__frame">
+            <img src="{{ '/assets/img/award-innovation-scholarship.jpg' | relative_url }}" alt="东北大学秦皇岛分校创新创业奖学金证书">
+          </div>
+          <p class="award-carousel__caption">东北大学秦皇岛分校创新创业奖学金证书，2025。</p>
+        </article>
+        <article class="award-carousel__slide" id="award-slide-5">
+          <div class="award-carousel__controls">
+            <a class="award-carousel__arrow" href="#award-slide-4" aria-label="上一张奖状">‹</a>
+            <span class="award-carousel__page">5 / 6</span>
+            <a class="award-carousel__arrow" href="#award-slide-6" aria-label="下一张奖状">›</a>
+          </div>
+          <div class="award-carousel__frame">
+            <img src="{{ '/assets/img/award-third-class-scholarship-2025.jpg' | relative_url }}" alt="东北大学秦皇岛分校2024至2025学年第三学期三等奖学金证书">
+          </div>
+          <p class="award-carousel__caption">东北大学秦皇岛分校三等奖学金证书，2024-2025 学年第三学期。</p>
+        </article>
+        <article class="award-carousel__slide" id="award-slide-6">
+          <div class="award-carousel__controls">
+            <a class="award-carousel__arrow" href="#award-slide-5" aria-label="上一张奖状">‹</a>
+            <span class="award-carousel__page">6 / 6</span>
+            <a class="award-carousel__arrow" href="#award-slide-1" aria-label="下一张奖状">›</a>
+          </div>
+          <div class="award-carousel__frame">
+            <img src="{{ '/assets/img/award-third-class-scholarship-2024.jpg' | relative_url }}" alt="东北大学秦皇岛分校2023至2024学年第一学期三等奖学金证书">
+          </div>
+          <p class="award-carousel__caption">东北大学秦皇岛分校三等奖学金证书，2023-2024 学年第一学期。</p>
         </article>
       </div>
       <div class="award-carousel__thumbs">
@@ -245,7 +278,19 @@ latest_posts:
         </a>
         <a class="award-carousel__thumb" href="#award-slide-3">
           <img src="{{ '/assets/img/award-third-class-scholarship.jpg' | relative_url }}" alt="三等奖学金证书缩略图">
-          <span>奖学金</span>
+          <span>三等奖 2025-2</span>
+        </a>
+        <a class="award-carousel__thumb" href="#award-slide-4">
+          <img src="{{ '/assets/img/award-innovation-scholarship.jpg' | relative_url }}" alt="创新创业奖学金证书缩略图">
+          <span>创新创业</span>
+        </a>
+        <a class="award-carousel__thumb" href="#award-slide-5">
+          <img src="{{ '/assets/img/award-third-class-scholarship-2025.jpg' | relative_url }}" alt="2024至2025学年第三学期三等奖学金证书缩略图">
+          <span>三等奖 2025-3</span>
+        </a>
+        <a class="award-carousel__thumb" href="#award-slide-6">
+          <img src="{{ '/assets/img/award-third-class-scholarship-2024.jpg' | relative_url }}" alt="2023至2024学年第一学期三等奖学金证书缩略图">
+          <span>三等奖 2024-1</span>
         </a>
       </div>
     </div>
