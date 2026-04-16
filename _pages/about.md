@@ -185,6 +185,59 @@ latest_posts:
         <p>2025</p>
       </div>
     </div>
+    <div class="award-showcase-stack">
+      <div class="home-card award-showcase" id="award-slide-1">
+        <div class="award-showcase__header">
+          <div>
+            <h3>奖状展示</h3>
+            <p>展示部分代表性获奖证书，支持翻页查看。</p>
+          </div>
+          <div class="award-showcase__controls">
+            <a class="award-showcase__arrow" href="#award-slide-3" aria-label="上一张奖状">‹</a>
+            <span class="award-showcase__page">1 / 3</span>
+            <a class="award-showcase__arrow" href="#award-slide-2" aria-label="下一张奖状">›</a>
+          </div>
+        </div>
+        <div class="award-showcase__frame">
+          <img src="{{ '/assets/img/award-math-modeling-first-prize.jpg' | relative_url }}" alt="全国大学生数学建模竞赛河北赛区本科组一等奖奖状">
+        </div>
+        <p class="award-showcase__caption">全国大学生数学建模竞赛，河北赛区本科组一等奖，2025。</p>
+      </div>
+      <div class="home-card award-showcase" id="award-slide-2">
+        <div class="award-showcase__header">
+          <div>
+            <h3>奖状展示</h3>
+            <p>展示部分代表性获奖证书，支持翻页查看。</p>
+          </div>
+          <div class="award-showcase__controls">
+            <a class="award-showcase__arrow" href="#award-slide-1" aria-label="上一张奖状">‹</a>
+            <span class="award-showcase__page">2 / 3</span>
+            <a class="award-showcase__arrow" href="#award-slide-3" aria-label="下一张奖状">›</a>
+          </div>
+        </div>
+        <div class="award-showcase__frame">
+          <img src="{{ '/assets/img/award-math-modeling-second-prize.jpg' | relative_url }}" alt="全国大学生数学竞赛非数学A类二等奖奖状">
+        </div>
+        <p class="award-showcase__caption">全国大学生数学竞赛（非数学 A 类）二等奖，2024。</p>
+      </div>
+      <div class="home-card award-showcase" id="award-slide-3">
+        <div class="award-showcase__header">
+          <div>
+            <h3>奖状展示</h3>
+            <p>展示部分代表性获奖证书，支持翻页查看。</p>
+          </div>
+          <div class="award-showcase__controls">
+            <a class="award-showcase__arrow" href="#award-slide-2" aria-label="上一张奖状">‹</a>
+            <span class="award-showcase__page">3 / 3</span>
+            <a class="award-showcase__arrow" href="#award-slide-1" aria-label="下一张奖状">›</a>
+          </div>
+        </div>
+        <div class="award-showcase__frame">
+          <img src="{{ '/assets/img/award-third-class-scholarship.jpg' | relative_url }}" alt="东北大学秦皇岛分校三等奖学金证书">
+        </div>
+        <p class="award-showcase__caption">东北大学秦皇岛分校三等奖学金证书，2024-2025 学年第二学期。</p>
+      </div>
+    </div>
   </section>
 
   <section class="home-section">
