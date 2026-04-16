@@ -15,6 +15,7 @@ MMLU、CMMLU 等 benchmark 提供更加可靠的有效性评估依据。
 
 <div class="project-links">
   <a class="project-link" href="https://github.com/HaoR724/LLM_eval" target="_blank" rel="noopener noreferrer">查看源码仓库</a>
+  <a class="project-link" href="https://github.com/HaoR724/LLM_eval/tree/main/data" target="_blank" rel="noopener noreferrer">查看数据集</a>
 </div>
 
 ## 研究问题
