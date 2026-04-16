@@ -131,6 +131,9 @@ latest_posts:
         </p>
       </a>
       <a class="home-project" href="{% link _projects/3_uav_vision.md %}">
+        <div class="home-project__gallery home-project__gallery--single">
+          <img src="{{ '/assets/img/uav-vision-pipeline.png' | relative_url }}" alt="无人机微小目标检测项目流程图">
+        </div>
         <p class="home-project__meta">大学生创新创业项目 / 核心开发</p>
         <h3>面向无人机图像的微小目标检测 SR-TOD</h3>
         <p>
@@ -138,6 +141,9 @@ latest_posts:
         </p>
         <p>
           管线融合 SuperGlue 拼接、MSR 光照校正、SR-TOD 检测框架与 DGFE 特征增强模块，提升复杂场景下的目标表达能力。
+        </p>
+        <p>
+          详情页已加入整体技术流程图与环境适应性结果展示图，用于更直观地说明系统设计与检测效果。
         </p>
       </a>
     </div>

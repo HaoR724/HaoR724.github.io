@@ -2,7 +2,7 @@
 layout: page
 title: 面向无人机图像的微小目标检测 SR-TOD
 description: 面向复杂海面环境的 SR-TOD 框架与 DGFE 模块设计。
-img: assets/img/1.jpg
+img: assets/img/uav-vision-pipeline.png
 importance: 3
 category: 科研项目
 ---
@@ -23,6 +23,32 @@ category: 科研项目
 - **SR-TOD 框架：** 提出 **Self-Reconstruction Tiny Object Detection (SR-TOD)** 框架，引入轻量级重建头，利用背景
   自重建差异生成差分图。
 - **特征增强：** 设计 **Difference-Guided Feature Enhancement (DGFE)** 模块，将差分图作为注意力先验强化多尺度特征。
+
+## 系统流程展示
+
+项目整体流程从海面无人机图像获取出发，依次经过图像拼接与颜色校正、特征提取、目标检测和特征增强等关键步骤，
+最终形成面向复杂场景的微小目标检测管线。该流程图也更直观地展示了从图像预处理到检测输出的完整方法链路。
+
+<div class="project-gallery project-gallery--hero">
+  <img src="{{ '/assets/img/uav-vision-pipeline.png' | relative_url }}" alt="无人机微小目标检测项目整体技术流程图">
+</div>
+
+<p class="project-caption">
+  上图展示了从无人机海面影像获取、SuperGlue 拼接、加权融合与颜色校正，到特征提取、目标检测和特征增强的完整流程。
+</p>
+
+## 结果展示与环境适应性
+
+在实验展示部分，项目重点强调了复杂海面和多变光照条件下的适应能力。通过图像增强、广域动态测量与微小目标检测，
+系统能够在云雾、亮度变化和复杂背景干扰下保持较好的识别表现。
+
+<div class="project-gallery project-gallery--hero">
+  <img src="{{ '/assets/img/uav-vision-results.png' | relative_url }}" alt="无人机微小目标检测项目结果与环境适应性展示图">
+</div>
+
+<p class="project-caption">
+  结果图展示了光照增强前后的图像差异、多环境下的检测表现，以及复杂海面场景中的目标识别效果。
+</p>
 
 ## 项目结果
 
