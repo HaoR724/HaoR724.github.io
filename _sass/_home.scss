@@ -72,7 +72,7 @@ body {
   gap: 1rem;
   align-content: start;
   justify-self: end;
-  width: min(100%, 220px);
+  width: min(100%, 260px);
   padding: 1rem;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(v.$blue-color, 0.1), rgba(v.$white-color, 0.96));
@@ -102,7 +102,8 @@ body {
 }
 
 .home-profile-info a {
-  word-break: break-all;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 .home-kicker,
@@ -520,7 +521,7 @@ body {
 
   .home-profile-card {
     justify-self: center;
-    width: min(100%, 220px);
+    width: min(100%, 260px);
   }
 }
 
