@@ -259,6 +259,10 @@ body {
   background: linear-gradient(180deg, rgba(v.$blue-color, 0.06), rgba(v.$white-color, 0.98));
 }
 
+.award-carousel--compact {
+  height: 100%;
+}
+
 .award-carousel__header {
   display: flex;
   align-items: flex-start;
@@ -368,6 +372,10 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.85rem;
   margin-top: 1rem;
+}
+
+.award-carousel__thumbs--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .award-carousel__thumb {

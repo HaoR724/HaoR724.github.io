@@ -247,6 +247,123 @@ latest_posts:
 
   <section class="home-section">
     <div class="home-section-heading">
+      <p class="home-section-label">学生工作</p>
+      <h2 class="home-section-title">在校级宣传组织中参与内容采编、活动执行与影像记录。</h2>
+    </div>
+    <div class="home-grid home-grid--two">
+      <div class="home-card">
+        <h3>校团委宣传部宣传中心｜学生干事</h3>
+        <p>
+          参与校级活动宣传组织与内容采编，负责校运动会等大型活动的摄影摄像、素材整理与宣传支持工作。
+        </p>
+        <p>
+          协同完成活动前期准备、现场执行及后期内容归档，保障宣传任务高效推进。
+        </p>
+        <p>
+          在学生工作中提升了影像记录、宣传表达、团队协作与组织执行能力。
+        </p>
+      </div>
+      <div class="home-card award-carousel award-carousel--compact">
+        <div class="award-carousel__header">
+          <div>
+            <h3>学生工作照片</h3>
+            <p>参照横向滚动展示方式，统一展示学生工作相关记录。</p>
+          </div>
+          <p class="award-carousel__hint">共 1 张</p>
+        </div>
+        <div class="award-carousel__viewport">
+          <article class="award-carousel__slide" id="student-work-slide-1">
+            <div class="award-carousel__controls">
+              <a class="award-carousel__arrow" href="#student-work-slide-1" aria-label="上一张照片">‹</a>
+              <span class="award-carousel__page">1 / 1</span>
+              <a class="award-carousel__arrow" href="#student-work-slide-1" aria-label="下一张照片">›</a>
+            </div>
+            <div class="award-carousel__frame">
+              <img src="{{ '/assets/img/student-work-publicity-center.jpg' | relative_url }}" alt="学生工作宣传中心合影照片">
+            </div>
+            <p class="award-carousel__caption">校团委宣传部宣传中心活动留影。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="home-section-heading">
+      <p class="home-section-label">志愿活动</p>
+      <h2 class="home-section-title">在社区服务与赛事保障中积累沟通协调、组织执行与服务经验。</h2>
+    </div>
+    <div class="home-grid home-grid--two">
+      <div class="home-card">
+        <h3>小浪花志愿服务活动｜志愿者</h3>
+        <p>
+          参与社区志愿服务活动，协助完成现场秩序维护、活动引导及服务保障工作。
+        </p>
+        <p>
+          配合团队完成活动物资整理、人员协调与流程支持，保障活动顺利开展。
+        </p>
+        <p>
+          在志愿服务中提升了沟通协调能力、团队协作能力与社会责任意识。
+        </p>
+        <h3>社区运动会、家属院老年运动会志愿服务｜志愿者</h3>
+        <p>
+          参与社区运动会及家属院老年运动会的志愿服务工作，负责现场引导、秩序维护、赛事协助及后勤支持。
+        </p>
+        <p>
+          面向社区居民尤其是老年群体提供服务保障，协助活动流程有序进行。
+        </p>
+        <p>
+          积累了大型活动服务经验，增强了组织执行能力与服务意识。
+        </p>
+      </div>
+      <div class="home-card award-carousel award-carousel--compact">
+        <div class="award-carousel__header">
+          <div>
+            <h3>志愿活动照片</h3>
+            <p>参照横向滚动展示方式，展示社区志愿服务与活动保障相关记录。</p>
+          </div>
+          <p class="award-carousel__hint">共 2 张</p>
+        </div>
+        <div class="award-carousel__viewport">
+          <article class="award-carousel__slide" id="volunteer-slide-1">
+            <div class="award-carousel__controls">
+              <a class="award-carousel__arrow" href="#volunteer-slide-2" aria-label="上一张照片">‹</a>
+              <span class="award-carousel__page">1 / 2</span>
+              <a class="award-carousel__arrow" href="#volunteer-slide-2" aria-label="下一张照片">›</a>
+            </div>
+            <div class="award-carousel__frame">
+              <img src="{{ '/assets/img/volunteer-community-service-1.jpg' | relative_url }}" alt="小浪花志愿服务活动照片">
+            </div>
+            <p class="award-carousel__caption">小浪花志愿服务活动现场照片。</p>
+          </article>
+          <article class="award-carousel__slide" id="volunteer-slide-2">
+            <div class="award-carousel__controls">
+              <a class="award-carousel__arrow" href="#volunteer-slide-1" aria-label="上一张照片">‹</a>
+              <span class="award-carousel__page">2 / 2</span>
+              <a class="award-carousel__arrow" href="#volunteer-slide-1" aria-label="下一张照片">›</a>
+            </div>
+            <div class="award-carousel__frame">
+              <img src="{{ '/assets/img/volunteer-community-service-2.jpg' | relative_url }}" alt="社区运动会志愿服务活动照片">
+            </div>
+            <p class="award-carousel__caption">社区运动会与活动保障相关照片。</p>
+          </article>
+        </div>
+        <div class="award-carousel__thumbs award-carousel__thumbs--two">
+          <a class="award-carousel__thumb" href="#volunteer-slide-1">
+            <img src="{{ '/assets/img/volunteer-community-service-1.jpg' | relative_url }}" alt="小浪花志愿服务活动缩略图">
+            <span>小浪花志愿</span>
+          </a>
+          <a class="award-carousel__thumb" href="#volunteer-slide-2">
+            <img src="{{ '/assets/img/volunteer-community-service-2.jpg' | relative_url }}" alt="社区运动会志愿服务缩略图">
+            <span>社区活动</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="home-section-heading">
       <p class="home-section-label">技术能力</p>
       <h2 class="home-section-title">科研实现与工程开发中主要使用的工具链。</h2>
     </div>
