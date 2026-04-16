@@ -72,7 +72,7 @@ body {
   gap: 1rem;
   align-content: start;
   justify-self: end;
-  width: min(100%, 180px);
+  width: min(100%, 220px);
   padding: 1rem;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(v.$blue-color, 0.1), rgba(v.$white-color, 0.96));
@@ -81,7 +81,8 @@ body {
 
 .home-profile-image {
   display: block;
-  width: 100%;
+  justify-self: center;
+  width: min(100%, 150px);
   aspect-ratio: 1 / 1.16;
   object-fit: cover;
   object-position: center 20%;
@@ -383,7 +384,7 @@ body {
 
   .home-profile-card {
     justify-self: center;
-    width: min(100%, 180px);
+    width: min(100%, 220px);
   }
 }
 
@@ -408,6 +409,7 @@ body {
   }
 
   .home-profile-image {
+    width: min(100%, 150px);
     aspect-ratio: 1 / 1.08;
     object-position: center 16%;
   }
