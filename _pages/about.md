@@ -115,6 +115,9 @@ latest_posts:
         </p>
       </a>
       <a class="home-project" href="{% link _projects/2_autonomous_driving.md %}">
+        <div class="home-project__gallery home-project__gallery--single">
+          <img src="{{ '/assets/img/autonomous-driving-flowchart.png' | relative_url }}" alt="自动驾驶掉头决策流程图">
+        </div>
         <p class="home-project__meta">核心算法设计</p>
         <h3>自动驾驶掉头决策与路径优化</h3>
         <p>
@@ -122,6 +125,9 @@ latest_posts:
         </p>
         <p>
           结合 Kalman Filter、TTC 安全窗、Bezier 曲线与 MPC，实现兼顾安全性、舒适性与实时性的掉头控制策略。
+        </p>
+        <p>
+          详情页已加入系统流程图、仿真决策结果、路径曲线变化与参数对比表，并可直接跳转项目论文。
         </p>
       </a>
       <a class="home-project" href="{% link _projects/3_uav_vision.md %}">

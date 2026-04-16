@@ -341,6 +341,38 @@ body {
   margin: 1.5rem 0;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  padding: 0.75rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid v.$blue-color;
+  background: rgba(v.$blue-color, 0.95);
+  color: v.$white-color;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(v.$blue-color-dark, 0.18);
+  background: v.$blue-color-dark;
+  color: v.$white-color;
+}
+
 .project-gallery img {
   display: block;
   width: 100%;
@@ -355,7 +387,16 @@ body {
 
 .project-gallery--hero img {
   max-height: 520px;
-  object-fit: cover;
+  object-fit: contain;
+  background: linear-gradient(180deg, rgba(v.$blue-color, 0.05), rgba(v.$white-color, 0.96));
+}
+
+.project-caption {
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+  color: rgba(v.$black-color, 0.68);
+  font-size: 0.98rem;
+  line-height: 1.75;
 }
 
 .projects .card,

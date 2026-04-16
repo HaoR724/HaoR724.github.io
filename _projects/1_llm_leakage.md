@@ -13,6 +13,10 @@ category: 科研项目
 本项目关注在大语言模型预训练数据不可观测的灰盒场景下，如何识别基准测试中的潜在数据污染问题。目标是为
 MMLU、CMMLU 等 benchmark 提供更加可靠的有效性评估依据。
 
+<div class="project-links">
+  <a class="project-link" href="https://github.com/HaoR724/LLM_eval" target="_blank" rel="noopener noreferrer">查看源码仓库</a>
+</div>
+
 ## 研究问题
 
 当评测题目已经在预训练语料中出现时，benchmark 分数会显著高估模型真实能力。由于灰盒评测无法直接访问训练
@@ -24,7 +28,12 @@ MMLU、CMMLU 等 benchmark 提供更加可靠的有效性评估依据。
 - **对数概率分析：** 通过 LLaMA 2、Qwen 等目标模型提取原始顺序与重排顺序下的 log-probability 分布。
 - **异常值检测：** 使用 **Isolation Forest** 对原始顺序的异常偏好进行打分，在刻意打乱正确选项后仍能识别污染样本。
 
-## 研究过程图
+## 研究过程与结果展示
+
+### 对数概率分布与异常评分
+
+首先围绕原始题目顺序与重排顺序构建对照实验，观察模型在不同选项排列下的 log-probability 变化。通过这些分布
+差异，可以进一步为 Isolation Forest 提供更稳定的异常评分依据，从而定位更可能受训练集污染影响的题目。
 
 <div class="project-gallery project-gallery--hero">
   <img src="{{ '/assets/img/llm-leakage-logprob.png' | relative_url }}" alt="不同选项顺序下的对数概率分布">
@@ -35,15 +44,38 @@ MMLU、CMMLU 等 benchmark 提供更加可靠的有效性评估依据。
   <img src="{{ '/assets/img/llm-leakage-leaderboard.png' | relative_url }}" alt="LLM benchmark 泄漏排行榜">
 </div>
 
+<p class="project-caption">
+  上图展示了从概率分布分析到异常顺序识别，再到不同模型污染风险排序的完整证据链，帮助判断 benchmark 得分是
+  来自真实能力还是潜在记忆。
+</p>
+
+### 典型案例分析
+
+在案例层面，项目进一步比较了不同题目在多种选项重排策略下的表现变化，观察模型是否对原始正确选项位置存在
+异常偏好。这一步能够补足纯统计指标的局限，使检测结果更具解释性。
+
 <div class="project-gallery project-gallery--two">
   <img src="{{ '/assets/img/llm-leakage-case-a.png' | relative_url }}" alt="scenario a 案例分析">
   <img src="{{ '/assets/img/llm-leakage-case-b.png' | relative_url }}" alt="scenario b 案例分析">
 </div>
 
+<p class="project-caption">
+  两组案例分别对应不同污染情形下的题目响应模式，用于说明方法在复杂重排条件下依然可以识别异常样本。
+</p>
+
+### 实验结果对比
+
+在实验阶段，重点比较了不同场景下污染样本识别结果与整体评测表现，验证该方法在复杂 benchmark 上的泛化能力。
+这些结果说明，基于选项重构与异常检测的灰盒策略可以为大模型评测提供更细粒度的可信度判断。
+
 <div class="project-gallery project-gallery--two">
   <img src="{{ '/assets/img/llm-leakage-results-a.png' | relative_url }}" alt="scenario a 实验结果">
   <img src="{{ '/assets/img/llm-leakage-results-b.png' | relative_url }}" alt="scenario b 实验结果">
 </div>
+
+<p class="project-caption">
+  实验结果覆盖不同数据集与不同模型设置，展示了方法对潜在污染样本的识别能力及其在评测稳定性分析中的价值。
+</p>
 
 ## 项目结果
 
