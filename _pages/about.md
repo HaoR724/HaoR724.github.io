@@ -156,10 +156,11 @@ latest_posts:
     </div>
     <div class="home-card">
       <ul class="home-news">
-        <li><span>[2025.10]</span> 获东北大学秦皇岛分校综合三等奖学金。</li>
-        <li><span>[2025.04]</span> 获综合一等奖学金与创新创业奖学金。</li>
-        <li><span>[2024]</span> 获综合一等奖学金。</li>
-        <li><span>[2024]</span> 获全国大学生数学建模竞赛省级一等奖。</li>
+        <li><span>[2026.04]</span> 获东北大学秦皇岛分校综合一等奖学金。</li>
+        <li><span>[2025.09]</span> 获全国大学生数学建模竞赛省级一等奖。</li>
+        <li><span>[2025.04]</span> 获校综合一等奖学金。</li>
+        <li><span>[2025.04]</span> 获校创新创业奖学金。</li>
+        <li><span>[2024.09]</span> 获全国大学生数学竞赛省级二等奖。</li>
       </ul>
     </div>
   </section>
@@ -175,19 +176,15 @@ latest_posts:
         <p>省级一等奖</p>
       </div>
       <div class="home-card home-card--award">
-        <h3>全国大学生数学建模竞赛</h3>
+        <h3>全国大学生数学竞赛</h3>
         <p>省级二等奖</p>
       </div>
       <div class="home-card home-card--award">
         <h3>综合一等奖学金</h3>
-        <p>2024、2025</p>
+        <p>2025、2026</p>
       </div>
       <div class="home-card home-card--award">
         <h3>创新创业奖学金</h3>
-        <p>2025</p>
-      </div>
-      <div class="home-card home-card--award">
-        <h3>综合三等奖学金</h3>
         <p>2025</p>
       </div>
     </div>

@@ -48,27 +48,26 @@ cv:
           - 自动驾驶
 
     Awards:
-      - title: 综合三等奖学金
+      - title: 综合一等奖学金
         awarder: Northeastern University at Qinhuangdao
+        date: 2026
+        summary: 2026 年 4 月获奖。
+      - title: 全国大学生数学建模竞赛省级一等奖
+        awarder: 中国大学生数学建模竞赛
         date: 2025
-        summary: 2025 年 10 月获奖。
+        summary: 2025 年 9 月获奖。
       - title: 综合一等奖学金
         awarder: Northeastern University at Qinhuangdao
         date: 2025
-        summary: 2025 年 4 月获奖。
+        summary: 2025 年 4 月获校综合一等奖学金。
       - title: 创新创业奖学金
         awarder: Northeastern University at Qinhuangdao
         date: 2025
-        summary: 2025 年 4 月获奖。
-      - title: 综合一等奖学金
-        awarder: Northeastern University at Qinhuangdao
+        summary: 2025 年 4 月获校创新创业奖学金。
+      - title: 全国大学生数学竞赛省级二等奖
+        awarder: 中国大学生数学竞赛
         date: 2024
-      - title: 全国大学生数学建模竞赛省级一等奖
-        awarder: 中国大学生数学建模竞赛
-        date: 2024
-      - title: 全国大学生数学建模竞赛省级二等奖
-        awarder: 中国大学生数学建模竞赛
-        date: 2024
+        summary: 2024 年 9 月获奖。
 
     Skills:
       - name: 编程语言
