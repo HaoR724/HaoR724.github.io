@@ -72,7 +72,7 @@ body {
   gap: 1rem;
   align-content: start;
   justify-self: end;
-  width: min(100%, 260px);
+  width: min(100%, 280px);
   padding: 1rem;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(v.$blue-color, 0.1), rgba(v.$white-color, 0.96));
@@ -102,8 +102,15 @@ body {
 }
 
 .home-profile-info a {
-  word-break: normal;
   overflow-wrap: anywhere;
+}
+
+.home-profile-info a[href^="mailto:"] {
+  display: inline-block;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+  font-size: 0.95rem;
 }
 
 .home-kicker,
@@ -245,23 +252,14 @@ body {
   font-weight: 600;
 }
 
-.award-showcase-stack {
+.award-carousel {
   margin-top: 1rem;
-}
-
-.award-showcase {
-  display: none;
   padding: 1.4rem;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(v.$blue-color, 0.06), rgba(v.$white-color, 0.98));
 }
 
-.award-showcase-stack .award-showcase:first-child,
-.award-showcase:target {
-  display: block;
-}
-
-.award-showcase__header {
+.award-carousel__header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -269,23 +267,48 @@ body {
   margin-bottom: 1rem;
 }
 
-.award-showcase__header h3 {
+.award-carousel__header h3 {
   margin-bottom: 0.35rem;
 }
 
-.award-showcase__header p {
+.award-carousel__header p {
   margin-bottom: 0;
   color: rgba(v.$black-color, 0.66);
 }
 
-.award-showcase__controls {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
+.award-carousel__hint {
   flex-shrink: 0;
+  color: v.$blue-color-dark;
+  font-weight: 700;
 }
 
-.award-showcase__arrow {
+.award-carousel__viewport {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(v.$blue-color, 0.35) rgba(v.$blue-color, 0.08);
+}
+
+.award-carousel__slide {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.award-carousel__controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.award-carousel__arrow {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -305,21 +328,21 @@ body {
     background 0.2s ease;
 }
 
-.award-showcase__arrow:hover {
+.award-carousel__arrow:hover {
   transform: translateY(-1px);
   background: v.$blue-color;
   color: v.$white-color;
   box-shadow: 0 12px 24px rgba(v.$blue-color-dark, 0.14);
 }
 
-.award-showcase__page {
+.award-carousel__page {
   min-width: 3rem;
   color: v.$blue-color-dark;
   font-weight: 700;
   text-align: center;
 }
 
-.award-showcase__frame {
+.award-carousel__frame {
   overflow: hidden;
   border-radius: 22px;
   border: 1px solid rgba(v.$blue-color-dark, 0.08);
@@ -327,17 +350,59 @@ body {
   box-shadow: 0 18px 36px rgba(v.$blue-color-dark, 0.08);
 }
 
-.award-showcase__frame img {
+.award-carousel__frame img {
   display: block;
   width: 100%;
   max-height: 560px;
   object-fit: contain;
 }
 
-.award-showcase__caption {
+.award-carousel__caption {
   margin: 1rem 0 0;
   color: rgba(v.$black-color, 0.72);
   line-height: 1.75;
+}
+
+.award-carousel__thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.award-carousel__thumb {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.7rem;
+  border-radius: 18px;
+  border: 1px solid rgba(v.$blue-color-dark, 0.08);
+  background: rgba(v.$white-color, 0.92);
+  color: v.$blue-color-dark;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.award-carousel__thumb:hover {
+  transform: translateY(-2px);
+  border-color: rgba(v.$blue-color, 0.22);
+  box-shadow: 0 16px 30px rgba(v.$blue-color-dark, 0.08);
+}
+
+.award-carousel__thumb img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  border-radius: 14px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.award-carousel__thumb span {
+  font-weight: 700;
+  text-align: center;
 }
 
 .home-tags {
@@ -521,7 +586,7 @@ body {
 
   .home-profile-card {
     justify-self: center;
-    width: min(100%, 260px);
+    width: min(100%, 280px);
   }
 }
 
@@ -560,16 +625,24 @@ body {
     gap: 0.35rem;
   }
 
-  .award-showcase__header {
+  .award-carousel__header {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .award-showcase__controls {
+  .award-carousel__controls {
     justify-content: space-between;
   }
 
-  .award-showcase__frame img {
+  .award-carousel__frame img {
     max-height: 360px;
+  }
+
+  .award-carousel__thumbs {
+    grid-template-columns: 1fr;
+  }
+
+  .award-carousel__thumb img {
+    height: 140px;
   }
 }
