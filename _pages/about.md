@@ -59,7 +59,7 @@ latest_posts:
     <div class="home-profile-card">
       <img class="home-profile-image" src="{{ '/assets/img/me.jpg' | relative_url }}" alt="刘浩然">
       <div class="home-profile-info">
-        <p><strong>邮箱</strong><br><a href="mailto:liuhaoran@stu.neuq.edu.cn">liuhaoran@stu.neuq.edu.cn</a></p>
+        <p><strong>邮箱</strong><br><a class="home-profile-email" href="mailto:liuhaoran@stu.neuq.edu.cn">liuhaoran@stu.neuq.edu.cn</a></p>
         <p><strong>GitHub</strong><br><a href="https://github.com/HaoR724" target="_blank" rel="noopener noreferrer">github.com/HaoR724</a></p>
         <p><strong>所在城市</strong><br>河北秦皇岛</p>
         <p><strong>关注方向</strong><br>大模型评测、视觉感知、自动驾驶</p>
