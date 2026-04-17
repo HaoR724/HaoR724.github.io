@@ -86,6 +86,7 @@ latest_posts:
         <div class="home-tags">
           <span class="home-tag">人工智能</span>
           <span class="home-tag">大语言模型</span>
+          <span class="home-tag">大模型评估</span>
           <span class="home-tag">计算机视觉</span>
           <span class="home-tag">微小目标检测</span>
           <span class="home-tag">自动驾驶</span>
@@ -164,7 +165,7 @@ latest_posts:
     </div>
     <div class="home-card">
       <ul class="home-news">
-        <li><span>[2026.04]</span> 获东北大学秦皇岛分校综合一等奖学金。</li>
+        <li><span>[2026.04]</span> 获校综合一等奖学金。</li>
         <li><span>[2025.09]</span> 获全国大学生数学建模竞赛省级一等奖。</li>
         <li><span>[2025.04]</span> 获校综合一等奖学金。</li>
         <li><span>[2025.04]</span> 获校创新创业奖学金。</li>
@@ -294,23 +295,23 @@ latest_posts:
         </a>
         <a class="award-carousel__thumb" href="#award-slide-3">
           <img src="{{ '/assets/img/award-third-class-scholarship.jpg' | relative_url }}" alt="三等奖学金证书缩略图" loading="lazy" decoding="async">
-          <span>三等奖 2025-2</span>
+          <span>三等奖</span>
         </a>
         <a class="award-carousel__thumb" href="#award-slide-4">
           <img src="{{ '/assets/img/award-innovation-scholarship.jpg' | relative_url }}" alt="创新创业奖学金证书缩略图" loading="lazy" decoding="async">
-          <span>创新创业</span>
+          <span>创新创业奖学金</span>
         </a>
         <a class="award-carousel__thumb" href="#award-slide-5">
           <img src="{{ '/assets/img/award-third-class-scholarship-2025.jpg' | relative_url }}" alt="2024至2025学年第三学期三等奖学金证书缩略图" loading="lazy" decoding="async">
-          <span>三等奖 2025-3</span>
+          <span>三等奖</span>
         </a>
         <a class="award-carousel__thumb" href="#award-slide-6">
           <img src="{{ '/assets/img/award-third-class-scholarship-2024.jpg' | relative_url }}" alt="2023至2024学年第一学期三等奖学金证书缩略图" loading="lazy" decoding="async">
-          <span>三等奖 2024-1</span>
+          <span>三等奖</span>
         </a>
         <a class="award-carousel__thumb" href="#award-slide-7">
           <img src="{{ '/assets/img/award-first-class-scholarship-school.png' | relative_url }}" alt="综合一等奖学金证书缩略图" loading="lazy" decoding="async">
-          <span>综合一等奖</span>
+          <span>综合一等奖学金</span>
         </a>
       </div>
     </div>
