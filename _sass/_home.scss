@@ -24,6 +24,84 @@ body {
   border-bottom: 1px solid rgba(120, 104, 206, 0.12);
 }
 
+.post .post-title {
+  color: var(--home-ink);
+  font-family: var(--home-display-font);
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+
+.post .post-description,
+.post .post-header .desc {
+  max-width: 760px;
+  color: rgba(92, 74, 178, 0.82);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.post article {
+  color: rgba(20, 33, 61, 0.88);
+  font-size: 1.02rem;
+  line-height: 1.88;
+}
+
+.post article p,
+.post article li {
+  color: rgba(20, 33, 61, 0.86);
+}
+
+.post article strong {
+  color: var(--home-accent-purple-deep);
+  font-weight: 700;
+}
+
+.post article h2,
+.post article h3,
+.post article h4 {
+  color: var(--home-accent-purple-deep);
+  font-family: var(--home-display-font);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.post article h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.post article h3 {
+  margin-top: 1.7rem;
+  margin-bottom: 0.85rem;
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+}
+
+.post article ul {
+  padding-left: 1.3rem;
+}
+
+.post article li::marker {
+  color: var(--home-accent-purple-dark);
+}
+
+.post article a:not(.project-link) {
+  color: var(--home-accent-purple-dark);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.projects .container {
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.projects .row {
+  row-gap: 1rem;
+}
+
 .post .desc {
   color: rgba(92, 74, 178, 0.82);
   font-size: 1rem;
@@ -680,6 +758,72 @@ body {
   margin-top: 2rem;
   color: var(--home-accent-purple-deep);
   font-family: var(--home-display-font);
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.projects > a {
+  text-decoration: none;
+}
+
+.projects .card {
+  overflow: hidden;
+  border: 1px solid rgba(120, 104, 206, 0.12);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(199, 184, 255, 0.11), rgba(255, 255, 255, 0.96)),
+    rgba(255, 255, 255, 0.96);
+  box-shadow: 0 20px 42px rgba(120, 104, 206, 0.1);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.projects .card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(120, 104, 206, 0.24);
+  box-shadow: 0 26px 48px rgba(120, 104, 206, 0.16);
+}
+
+.projects .card-body {
+  padding: 1.35rem 1.35rem 1.25rem;
+}
+
+.projects .card-title {
+  margin-bottom: 0.65rem;
+  color: var(--home-accent-purple-deep);
+  font-family: var(--home-display-font);
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.projects .card-text {
+  margin-bottom: 0.8rem;
+  color: rgba(20, 33, 61, 0.76);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.projects .card .card-img,
+.projects .card .card-img-top {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projects .github-icon .icon a,
+.projects .github-icon .stars {
+  color: var(--home-accent-purple-dark);
+}
+
+.projects .github-icon .icon a:hover,
+.projects .github-icon .stars:hover {
+  color: var(--home-accent-purple-deep);
 }
 
 .home-reveal {
@@ -782,7 +926,9 @@ body {
 .project-caption {
   margin-top: -0.25rem;
   margin-bottom: 1rem;
-  color: rgba(v.$black-color, 0.68);
+  padding-left: 0.9rem;
+  border-left: 3px solid rgba(199, 184, 255, 0.6);
+  color: rgba(92, 74, 178, 0.78);
   font-size: 0.98rem;
   line-height: 1.75;
 }
@@ -871,6 +1017,19 @@ body {
 
   .home-section-title {
     font-size: 1.4rem;
+  }
+
+  .post .post-title {
+    font-size: 1.8rem;
+  }
+
+  .post article {
+    font-size: 0.98rem;
+  }
+
+  .projects .card .card-img,
+  .projects .card .card-img-top {
+    min-height: 190px;
   }
 
   .home-hero-title {
