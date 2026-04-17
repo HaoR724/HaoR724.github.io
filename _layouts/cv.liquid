@@ -16,7 +16,8 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-      {{ page.title }}
+      <span class="post-title__icon"><i class="fa-solid fa-id-card-clip"></i></span>
+      <span>{{ page.title }}</span>
       {% if page.cv_pdf %}
         <a
           {% if page.cv_pdf contains '://' %}
@@ -38,6 +39,18 @@ layout: default
   </header>
 
   <article>
+    <div class="detail-shell detail-shell--cv">
+      <aside class="detail-timeline" aria-label="简历章节导航">
+        <div class="detail-timeline__sticky">
+          <p class="detail-timeline__eyebrow"><i class="fa-solid fa-timeline"></i><span>简历导览</span></p>
+          <p class="detail-timeline__current">{{ page.title }}</p>
+          <div class="detail-timeline__rail">
+            <span class="detail-timeline__line"></span>
+            <ol class="detail-timeline__nav"></ol>
+          </div>
+        </div>
+      </aside>
+      <div class="detail-shell__content detail-shell__content--cv">
     <div class="cv">
       {% comment %} Determine which CV format to render {% endcomment %}
       {% assign render_rendercv = false %}
@@ -412,6 +425,8 @@ layout: default
       {% else %}
         <p>未找到简历数据，请检查 `cv.yml` 或 `resume.json` 的配置。</p>
       {% endif %}
+    </div>
+      </div>
     </div>
   </article>
 </div>

@@ -17,11 +17,15 @@ latest_posts:
 ---
 
 <div class="home-shell">
-  <div class="home-timeline" aria-hidden="true">
-    <span class="home-timeline__line"></span>
-    <span class="home-timeline__pulse home-timeline__pulse--1"></span>
-    <span class="home-timeline__pulse home-timeline__pulse--2"></span>
-    <span class="home-timeline__pulse home-timeline__pulse--3"></span>
+  <div class="home-timeline" aria-label="主页章节导航">
+    <div class="home-timeline__sticky">
+      <p class="home-timeline__eyebrow"><i class="fa-solid fa-compass"></i><span>章节导航</span></p>
+      <p class="home-timeline__current">个人简介</p>
+      <div class="home-timeline__rail">
+        <span class="home-timeline__line"></span>
+        <ol class="home-timeline__nav"></ol>
+      </div>
+    </div>
   </div>
 
   <section class="home-hero-panel home-hero-panel--with-profile home-reveal" data-reveal="hero">
@@ -165,11 +169,11 @@ latest_posts:
     </div>
     <div class="home-card">
       <ul class="home-news">
-        <li><span>[2026.04]</span>   --获校综合一等奖学金。</li>
-        <li><span>[2025.09]</span>   --获全国大学生数学建模竞赛省级一等奖。</li>
-        <li><span>[2025.04]</span>   --获校综合一等奖学金。</li>
-        <li><span>[2025.04]</span>   --获校创新创业奖学金。</li>
-        <li><span>[2024.09]</span>   --获全国大学生数学竞赛省级二等奖。</li>
+        <li><span>[2026.04]</span><p class="home-news__content">获校综合一等奖学金。</p></li>
+        <li><span>[2025.09]</span><p class="home-news__content">获全国大学生数学建模竞赛省级一等奖。</p></li>
+        <li><span>[2025.04]</span><p class="home-news__content">获校综合一等奖学金。</p></li>
+        <li><span>[2025.04]</span><p class="home-news__content">获校创新创业奖学金。</p></li>
+        <li><span>[2024.09]</span><p class="home-news__content">获全国大学生数学竞赛省级二等奖。</p></li>
       </ul>
     </div>
   </section>
@@ -195,9 +199,9 @@ latest_posts:
             <a class="award-carousel__arrow" href="#award-slide-2" aria-label="下一张奖状">›</a>
           </div>
           <div class="award-carousel__frame">
-            <img src="{{ '/assets/img/award-math-modeling-first-prize.jpg' | relative_url }}" alt="全国大学生数学建模竞赛河北赛区本科组一等奖奖状" loading="lazy" decoding="async">
+            <img src="{{ '/assets/img/award-math-modeling-second-prize.jpg' | relative_url }}" alt="全国大学生数学竞赛非数学A类二等奖奖状" loading="lazy" decoding="async">
           </div>
-          <p class="award-carousel__caption">全国大学生数学建模竞赛，河北赛区本科组一等奖，2025。</p>
+          <p class="award-carousel__caption">全国大学生数学竞赛（非数学 A 类）二等奖，2024。</p>
         </article>
         <article class="award-carousel__slide" id="award-slide-2">
           <div class="award-carousel__controls">
@@ -206,9 +210,9 @@ latest_posts:
             <a class="award-carousel__arrow" href="#award-slide-3" aria-label="下一张奖状">›</a>
           </div>
           <div class="award-carousel__frame">
-            <img src="{{ '/assets/img/award-math-modeling-second-prize.jpg' | relative_url }}" alt="全国大学生数学竞赛非数学A类二等奖奖状" loading="lazy" decoding="async">
+            <img src="{{ '/assets/img/award-math-modeling-first-prize.jpg' | relative_url }}" alt="全国大学生数学建模竞赛河北赛区本科组一等奖奖状" loading="lazy" decoding="async">
           </div>
-          <p class="award-carousel__caption">全国大学生数学竞赛（非数学 A 类）二等奖，2024。</p>
+          <p class="award-carousel__caption">全国大学生数学建模竞赛，河北赛区本科组一等奖，2025。</p>
         </article>
         <article class="award-carousel__slide" id="award-slide-3">
           <div class="award-carousel__controls">

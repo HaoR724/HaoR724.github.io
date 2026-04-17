@@ -20,7 +20,25 @@ layout: default
   </header>
 
   <article>
-    {{ content }}
+    {% if page.url contains '/projects/' %}
+      <div class="detail-shell detail-shell--project">
+        <aside class="detail-timeline" aria-label="项目章节导航">
+          <div class="detail-timeline__sticky">
+            <p class="detail-timeline__eyebrow"><i class="fa-solid fa-route"></i><span>项目脉络</span></p>
+            <p class="detail-timeline__current">{{ page.title }}</p>
+            <div class="detail-timeline__rail">
+              <span class="detail-timeline__line"></span>
+              <ol class="detail-timeline__nav"></ol>
+            </div>
+          </div>
+        </aside>
+        <div class="detail-shell__content detail-shell__content--project">
+          {{ content }}
+        </div>
+      </div>
+    {% else %}
+      {{ content }}
+    {% endif %}
   </article>
 
   {% if page.related_publications %}
