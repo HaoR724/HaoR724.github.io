@@ -179,24 +179,6 @@ latest_posts:
       <p class="home-section-label"><i class="fa-solid fa-trophy"></i><span>荣誉奖项</span></p>
       <h2 class="home-section-title">能够体现学术潜力与竞赛能力的代表性成果。</h2>
     </div>
-    <div class="home-grid home-grid--two">
-      <div class="home-card home-card--award">
-        <h3>全国大学生数学建模竞赛</h3>
-        <p>省级一等奖</p>
-      </div>
-      <div class="home-card home-card--award">
-        <h3>全国大学生数学竞赛</h3>
-        <p>省级二等奖</p>
-      </div>
-      <div class="home-card home-card--award">
-        <h3>综合一等奖学金</h3>
-        <p>2025、2026</p>
-      </div>
-      <div class="home-card home-card--award">
-        <h3>创新创业奖学金</h3>
-        <p>2025</p>
-      </div>
-    </div>
     <div class="home-card award-carousel">
       <div class="award-carousel__header">
         <div>
