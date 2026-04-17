@@ -165,11 +165,11 @@ latest_posts:
     </div>
     <div class="home-card">
       <ul class="home-news">
-        <li><span>[2026.04]</span> 获校综合一等奖学金。</li>
-        <li><span>[2025.09]</span> 获全国大学生数学建模竞赛省级一等奖。</li>
-        <li><span>[2025.04]</span> 获校综合一等奖学金。</li>
-        <li><span>[2025.04]</span> 获校创新创业奖学金。</li>
-        <li><span>[2024.09]</span> 获全国大学生数学竞赛省级二等奖。</li>
+        <li><span>[2026.04]</span>   获校综合一等奖学金。</li>
+        <li><span>[2025.09]</span>   获全国大学生数学建模竞赛省级一等奖。</li>
+        <li><span>[2025.04]</span>   获校综合一等奖学金。</li>
+        <li><span>[2025.04]</span>   获校创新创业奖学金。</li>
+        <li><span>[2024.09]</span>   获全国大学生数学竞赛省级二等奖。</li>
       </ul>
     </div>
   </section>
