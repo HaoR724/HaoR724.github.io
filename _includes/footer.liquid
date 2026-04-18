@@ -11,10 +11,31 @@
   {% endif %}
 {% endcapture %}
 
+{% capture footer_stats %}
+  <div class="footer-stats" aria-label="站点访问统计">
+    <span class="footer-stats__item">
+      <i class="fa-solid fa-user-group" aria-hidden="true"></i>
+      <span class="footer-stats__label">总访客</span>
+      <span class="footer-stats__value" id="busuanzi_site_uv" aria-live="polite">加载中</span>
+    </span>
+    <span class="footer-stats__item">
+      <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+      <span class="footer-stats__label">总访问</span>
+      <span class="footer-stats__value" id="busuanzi_site_pv" aria-live="polite">加载中</span>
+    </span>
+    <span class="footer-stats__item">
+      <i class="fa-solid fa-book-open-reader" aria-hidden="true"></i>
+      <span class="footer-stats__label">本页阅读</span>
+      <span class="footer-stats__value" id="busuanzi_page_pv" aria-live="polite">加载中</span>
+    </span>
+  </div>
+{% endcapture %}
+
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
       {{ footer_contents }}
+      {{ footer_stats }}
     </div>
   </footer>
 {% else %}
@@ -25,6 +46,7 @@
 
     <div class="container">
       {{ footer_contents }}
+      {{ footer_stats }}
     </div>
   </footer>
 {% endif %}

@@ -9,8 +9,12 @@ display_categories: [科研项目]
 horizontal: true
 ---
 
-这里汇总了我当前较有代表性的科研与工程项目，涵盖大模型基准污染检测、无人机场景微小目标检测，以及自动驾驶
-规划控制系统。
+<div class="projects-intro">
+  <p>
+    这里汇总了我当前较有代表性的科研与工程项目，涵盖大模型基准污染检测、无人机场景微小目标检测，以及自动驾驶
+    规划控制系统。
+  </p>
+</div>
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

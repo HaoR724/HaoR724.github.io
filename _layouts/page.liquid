@@ -10,6 +10,17 @@ layout: default
 
 <div class="post">
   <header class="post-header">
+    <p class="post-header__eyebrow">
+      {% if page.url contains '/projects/' %}
+        <i class="fa-solid fa-sparkles"></i><span>项目档案</span>
+      {% elsif page.permalink == '/projects/' %}
+        <i class="fa-solid fa-diagram-project"></i><span>项目总览</span>
+      {% elsif page.permalink == '/news/' %}
+        <i class="fa-solid fa-wave-square"></i><span>近期动态</span>
+      {% else %}
+        <i class="fa-solid fa-book-open"></i><span>页面内容</span>
+      {% endif %}
+    </p>
     <h1 class="post-title">
       {% if page.url contains '/projects/' %}
         <span class="post-title__icon"><i class="fa-solid fa-sparkles"></i></span>

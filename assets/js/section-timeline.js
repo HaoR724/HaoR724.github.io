@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
   const configs = [
     {
       container: ".home-shell",
@@ -50,11 +52,20 @@ document.addEventListener("DOMContentLoaded", () => {
     return node.textContent.replace(/\s+/g, " ").trim();
   };
 
+  const getHighlightTarget = (node) => {
+    if (node.classList.contains("anchor")) {
+      return node.nextElementSibling || node;
+    }
+
+    return node;
+  };
+
   const mountTimeline = (config) => {
     const container = document.querySelector(config.container);
     const timeline = document.querySelector(config.timeline);
     const current = document.querySelector(config.current);
     const nav = document.querySelector(config.nav);
+    const rail = timeline?.querySelector(".home-timeline__rail, .detail-timeline__rail");
 
     if (!container || !timeline || !current || !nav) return;
 
@@ -74,6 +85,11 @@ document.addEventListener("DOMContentLoaded", () => {
       dot.className = config.dotClass;
       dot.setAttribute("aria-hidden", "true");
 
+      const indexLabel = document.createElement("span");
+      indexLabel.className = `${config.itemClass.replace("__item", "__index")}`;
+      indexLabel.setAttribute("aria-hidden", "true");
+      indexLabel.textContent = String(index + 1).padStart(2, "0");
+
       const button = document.createElement("button");
       button.type = "button";
       button.textContent = text;
@@ -81,10 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
         section.scrollIntoView({ behavior: "smooth", block: "start" });
       });
 
-      li.append(dot, button);
+      li.append(dot, indexLabel, button);
       nav.append(li);
 
-      return { section, li, text };
+      return { section, li, text, index, highlightTarget: getHighlightTarget(section) };
     });
 
     let activeIndex = -1;
@@ -94,10 +110,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!target || activeIndex === index) return;
       activeIndex = index;
       current.textContent = target.text;
+      current.dataset.step = String(index + 1).padStart(2, "0");
       items.forEach((item, itemIndex) => {
         const isActive = itemIndex === index;
         item.li.classList.toggle("is-active", isActive);
         item.li.querySelector("button")?.setAttribute("aria-current", isActive ? "true" : "false");
+        item.highlightTarget?.classList.toggle("is-current", isActive);
       });
     };
 
@@ -125,6 +143,16 @@ document.addEventListener("DOMContentLoaded", () => {
       return nextActiveIndex;
     };
 
+    const updateProgress = () => {
+      if (!rail) return;
+      const marker = window.scrollY + window.innerHeight * (config.activationRatio || 0.28);
+      const start = getAbsoluteTop(items[0].section);
+      const end = getAbsoluteTop(items[items.length - 1].section);
+      const range = Math.max(end - start, 1);
+      const progress = clamp((marker - start) / range, 0, 1);
+      rail.style.setProperty("--timeline-progress", `${progress * 100}%`);
+    };
+
     let ticking = false;
 
     const onScroll = () => {
@@ -133,6 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       window.requestAnimationFrame(() => {
         setActive(resolveActiveIndex());
+        updateProgress();
         ticking = false;
       });
     };

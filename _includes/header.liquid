@@ -48,7 +48,8 @@
           <!-- Home -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
+              <span class="nav-link__icon"><i class="fa-solid fa-house"></i></span>
+              <span>{{- about_title -}}</span>
               {% if page.permalink == '/' %}
                 <span class="sr-only">（当前页）</span>
               {% endif %}
@@ -98,6 +99,14 @@
                 </li>
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
+                {% assign nav_icon = 'fa-solid fa-book-open' %}
+                {% if p.permalink == '/projects/' %}
+                  {% assign nav_icon = 'fa-solid fa-diagram-project' %}
+                {% elsif p.permalink == '/news/' %}
+                  {% assign nav_icon = 'fa-solid fa-wave-square' %}
+                {% elsif p.permalink == '/cv/' %}
+                  {% assign nav_icon = 'fa-solid fa-id-card-clip' %}
+                {% endif %}
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
@@ -107,7 +116,8 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
+                    <span class="nav-link__icon"><i class="{{ nav_icon }}"></i></span>
+                    <span>{{- p.title -}}</span>
                     {% if page.url contains p.url %}
                       <span class="sr-only">（当前页）</span>
                     {% endif %}
