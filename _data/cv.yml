@@ -5,11 +5,11 @@ cv:
   website: https://HaoR724.github.io
   image: /assets/img/me.jpg
   summary: >
-    东北大学秦皇岛分校计算机科学与技术专业本科生，GPA 为 4.1/5.0，专业排名前 7%。目前主要围绕大模型评测、微小目标检测与自动驾驶规划控制开展研究与项目实践，正在积极申请硕士与博士阶段的科研机会。
+    东北大学秦皇岛分校计算机科学与技术专业本科生，GPA 为 4.1/5.0，专业排名前 7%。目前主要围绕大模型基准污染检测与 benchmark 数据泄露问题开展研究与工程实践，正在积极申请硕士与博士阶段的科研机会。
 
   address:
-    city: Qinhuangdao
-    region: Hebei
+    city: 山东 济南
+    region:
     countryCode: CN
 
   sections:
@@ -23,7 +23,7 @@ cv:
         highlights:
           - 专业排名前 7%，GPA 为 4.1/5.0。
           - 英语六级成绩 555。
-          - 研究兴趣包括人工智能、计算机视觉与自动驾驶。
+          - 研究兴趣聚焦人工智能、大语言模型与评估检测。
 
     Course Performance:
       - name: 概率论
@@ -53,11 +53,11 @@ cv:
         location: 中国秦皇岛
         start_date: 2024
         end_date: 至今
-        summary: 参与大模型评测、无人机微小目标检测与自动驾驶规划控制方向的项目制研究。
+        summary: 参与大模型基准污染检测与 benchmark 数据泄露问题方向的项目制研究。
         highlights:
           - 通过选项重构、log-probability 分析与 Isolation Forest 研究灰盒场景下的大模型 benchmark 污染检测。
-          - 设计 SR-TOD 框架与 DGFE 模块，提升复杂海面无人机场景中的微小目标检测能力。
-          - 构建面向城市复杂掉头场景的一体化自动驾驶决策、路径优化与 MPC 控制流程。
+          - 围绕 benchmark 数据泄露问题整理研究过程图、案例分析与结果对比，增强方法展示与解释性。
+          - 持续推进相关代码、数据集与实验结果的整理，用于支撑后续科研申请与项目展示。
 
     Academic Interests:
       - name: 研究方向
@@ -65,9 +65,9 @@ cv:
         keywords:
           - 人工智能
           - 大语言模型
-          - 计算机视觉
-          - 微小目标检测
-          - 自动驾驶
+          - 大模型评估
+          - 基准污染检测
+          - 数据泄露分析
 
     Awards:
       - title: 综合一等奖学金

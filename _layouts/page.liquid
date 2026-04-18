@@ -20,7 +20,7 @@ layout: default
   </header>
 
   <article>
-    {% if page.url contains '/projects/' %}
+    {% if page.url contains '/projects/' and page.layout == 'page' and page.collection == 'projects' %}
       <div class="detail-shell detail-shell--project">
         <aside class="detail-timeline" aria-label="项目章节导航">
           <div class="detail-timeline__sticky">

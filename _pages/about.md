@@ -106,6 +106,63 @@ latest_posts:
 
   <section class="home-section home-reveal" data-reveal="2">
     <div class="home-section-heading">
+      <p class="home-section-label"><i class="fa-solid fa-circle-nodes"></i><span>研究图谱</span></p>
+      <h2 class="home-section-title">围绕大模型 benchmark 泄露问题构建方法、证据与产出。</h2>
+    </div>
+    <div class="home-research-map">
+      <div class="home-research-map__orbit">
+        <span class="home-research-map__axis home-research-map__axis--horizontal" aria-hidden="true"></span>
+        <span class="home-research-map__axis home-research-map__axis--vertical" aria-hidden="true"></span>
+
+        <article class="home-research-node home-research-node--method">
+          <p class="home-research-node__eyebrow"><i class="fa-solid fa-flask-vial"></i><span>方法路径</span></p>
+          <h3>从重构到异常检测</h3>
+          <p>通过选项重构、log-probability 分析与 Isolation Forest 建立灰盒检测流程。</p>
+        </article>
+
+        <article class="home-research-node home-research-node--question">
+          <p class="home-research-node__eyebrow"><i class="fa-solid fa-circle-question"></i><span>问题定义</span></p>
+          <h3>评测分数是否可信</h3>
+          <p>当 benchmark 题目出现在预训练语料中，模型得分可能高估真实能力。</p>
+        </article>
+
+        <article class="home-research-node home-research-node--center">
+          <p class="home-research-node__eyebrow"><i class="fa-solid fa-brain"></i><span>研究核心</span></p>
+          <h3>LLM Benchmark 数据泄露 / 基准污染检测</h3>
+          <p>
+            我的核心兴趣不是单纯追求更高分数，而是研究这些分数是否真的反映模型能力，以及如何在灰盒场景下建立
+            更可靠的评测依据。
+          </p>
+        </article>
+
+        <article class="home-research-node home-research-node--evidence">
+          <p class="home-research-node__eyebrow"><i class="fa-solid fa-chart-column"></i><span>证据链</span></p>
+          <h3>从图表到案例分析</h3>
+          <p>通过概率分布、异常评分、排行榜、案例图和结果对比，形成可解释的研究证据链。</p>
+        </article>
+
+        <article class="home-research-node home-research-node--output">
+          <p class="home-research-node__eyebrow"><i class="fa-solid fa-box-archive"></i><span>研究产出</span></p>
+          <h3>项目页、代码与数据</h3>
+          <p>研究过程图、项目介绍、代码仓库和数据目录已经整理到线上主页与 GitHub 中。</p>
+          <div class="home-research-node__actions">
+            <a href="{% link _projects/1_llm_leakage.md %}">查看项目</a>
+            <a href="https://github.com/HaoR724/LLM_eval" target="_blank" rel="noopener noreferrer">查看仓库</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="home-research-map__footer">
+        <span>可信评测</span>
+        <span>灰盒场景</span>
+        <span>异常检测</span>
+        <span>可解释证据</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-reveal" data-reveal="3">
+    <div class="home-section-heading">
       <p class="home-section-label"><i class="fa-solid fa-microscope"></i><span>代表项目</span></p>
       <h2 class="home-section-title">当前最能体现研究积累与方法能力的三个方向。</h2>
     </div>
@@ -164,7 +221,7 @@ latest_posts:
     </div>
   </section>
 
-  <section class="home-section home-reveal" data-reveal="3">
+  <section class="home-section home-reveal" data-reveal="4">
     <div class="home-section-heading">
       <p class="home-section-label"><i class="fa-solid fa-wave-square"></i><span>最新动态</span></p>
       <h2 class="home-section-title">近期获奖与学习科研进展。</h2>
@@ -180,7 +237,7 @@ latest_posts:
     </div>
   </section>
 
-  <section class="home-section home-reveal" data-reveal="4">
+  <section class="home-section home-reveal" data-reveal="5">
     <div class="home-section-heading">
       <p class="home-section-label"><i class="fa-solid fa-trophy"></i><span>荣誉奖项</span></p>
       <h2 class="home-section-title">能够体现学术潜力与竞赛能力的代表性成果。</h2>
@@ -276,7 +333,7 @@ latest_posts:
     </div>
   </section>
 
-  <section class="home-section home-reveal" data-reveal="5">
+  <section class="home-section home-reveal" data-reveal="6">
     <div class="home-section-heading">
       <p class="home-section-label"><i class="fa-solid fa-camera-retro"></i><span>学生工作</span></p>
       <h2 class="home-section-title">在校级宣传组织中参与内容采编、活动执行与影像记录。</h2>
@@ -319,7 +376,7 @@ latest_posts:
     </div>
   </section>
 
-  <section class="home-section home-reveal" data-reveal="6">
+  <section class="home-section home-reveal" data-reveal="7">
     <div class="home-section-heading">
       <p class="home-section-label"><i class="fa-solid fa-hand-holding-heart"></i><span>志愿活动</span></p>
       <h2 class="home-section-title">在社区服务与赛事保障中积累沟通协调、组织执行与服务经验。</h2>
@@ -408,7 +465,7 @@ latest_posts:
     </div>
   </section>
 
-  <section class="home-section home-reveal" data-reveal="7">
+  <section class="home-section home-reveal" data-reveal="8">
     <div class="home-section-heading">
       <p class="home-section-label"><i class="fa-solid fa-code"></i><span>技术能力</span></p>
       <h2 class="home-section-title">科研实现与工程开发中主要使用的工具链。</h2>
