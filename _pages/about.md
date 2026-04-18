@@ -35,7 +35,7 @@ latest_posts:
       <p class="home-signature">Haoran Liu</p>
       <p class="home-lead">
         我是东北大学秦皇岛分校计算机科学与技术专业本科生，专业排名前 <strong>7%</strong>，GPA 为
-        <strong>4.06/5.00</strong>，英语六级成绩 <strong>555</strong>。
+        <strong>4.1/5.0</strong>，英语六级成绩 <strong>555</strong>。
       </p>
       <p class="home-lead">
         目前主要围绕<strong>大模型基准污染检测</strong>、<strong>大模型在 benchmark 上的数据泄露问题</strong>展开研究与工程实现，
@@ -59,7 +59,7 @@ latest_posts:
           <span class="home-metric__label">专业排名</span>
         </div>
         <div class="home-metric">
-          <span class="home-metric__value">4.06 / 5.00</span>
+          <span class="home-metric__value">4.1 / 5.0</span>
           <span class="home-metric__label">GPA</span>
         </div>
         <div class="home-metric">

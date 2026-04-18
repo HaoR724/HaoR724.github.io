@@ -1,0 +1,8 @@
+<div class="cv-course-grid">
+  {% for entry in entries %}
+    <div class="cv-course-card">
+      <div class="cv-course-card__name">{{ entry.name }}</div>
+      <div class="cv-course-card__score">{{ entry.score }}</div>
+    </div>
+  {% endfor %}
+</div>

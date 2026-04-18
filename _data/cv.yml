@@ -5,7 +5,7 @@ cv:
   website: https://HaoR724.github.io
   image: /assets/img/me.jpg
   summary: >
-    东北大学秦皇岛分校计算机科学与技术专业本科生，GPA 为 4.06/5.00，专业排名前 7%。目前主要围绕大模型评测、微小目标检测与自动驾驶规划控制开展研究与项目实践，正在积极申请硕士与博士阶段的科研机会。
+    东北大学秦皇岛分校计算机科学与技术专业本科生，GPA 为 4.1/5.0，专业排名前 7%。目前主要围绕大模型评测、微小目标检测与自动驾驶规划控制开展研究与项目实践，正在积极申请硕士与博士阶段的科研机会。
 
   address:
     city: Qinhuangdao
@@ -21,9 +21,31 @@ cv:
         start_date: 2022
         end_date: 2026
         highlights:
-          - 专业排名前 7%，GPA 为 4.06/5.00。
+          - 专业排名前 7%，GPA 为 4.1/5.0。
           - 英语六级成绩 555。
           - 研究兴趣包括人工智能、计算机视觉与自动驾驶。
+
+    Course Performance:
+      - name: 概率论
+        score: 100
+      - name: 计算机组成原理
+        score: 98
+      - name: 汇编语言程序设计
+        score: 98
+      - name: 软件工程
+        score: 98
+      - name: 计算机网络
+        score: 97
+      - name: 数据库原理
+        score: 96
+      - name: 电子技术基础
+        score: 96
+      - name: 数据结构
+        score: 94
+      - name: 离散数学
+        score: 94
+      - name: 算法设计与分析
+        score: 92
 
     Experience:
       - company: Northeastern University at Qinhuangdao
