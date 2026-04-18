@@ -9,26 +9,29 @@ document.addEventListener("DOMContentLoaded", () => {
       nav: ".home-timeline__nav",
       itemClass: "home-timeline__item",
       dotClass: "home-timeline__dot",
+      activationRatio: 0.28,
     },
     {
       container: ".detail-shell--project",
       timeline: ".detail-shell--project .detail-timeline",
-      sections: ".detail-shell--project .detail-shell__content h2",
+      sections: ".detail-shell__content h2",
       label: null,
       current: ".detail-shell--project .detail-timeline__current",
       nav: ".detail-shell--project .detail-timeline__nav",
       itemClass: "detail-timeline__item",
       dotClass: "detail-timeline__dot",
+      activationRatio: 0.24,
     },
     {
       container: ".detail-shell--cv",
       timeline: ".detail-shell--cv .detail-timeline",
-      sections: ".detail-shell--cv .detail-shell__content .anchor",
+      sections: ".detail-shell__content .anchor",
       label: null,
       current: ".detail-shell--cv .detail-timeline__current",
       nav: ".detail-shell--cv .detail-timeline__nav",
       itemClass: "detail-timeline__item",
       dotClass: "detail-timeline__dot",
+      activationRatio: 0.24,
     },
   ];
 
@@ -84,29 +87,60 @@ document.addEventListener("DOMContentLoaded", () => {
       return { section, li, text };
     });
 
+    let activeIndex = -1;
+
     const setActive = (index) => {
       const target = items[index];
-      if (!target) return;
+      if (!target || activeIndex === index) return;
+      activeIndex = index;
       current.textContent = target.text;
-      items.forEach((item, itemIndex) => item.li.classList.toggle("is-active", itemIndex === index));
+      items.forEach((item, itemIndex) => {
+        const isActive = itemIndex === index;
+        item.li.classList.toggle("is-active", isActive);
+        item.li.querySelector("button")?.setAttribute("aria-current", isActive ? "true" : "false");
+      });
     };
 
     setActive(0);
 
-    const onScroll = () => {
-      let activeIndex = 0;
+    const getAbsoluteTop = (node) => window.scrollY + node.getBoundingClientRect().top;
+
+    const resolveActiveIndex = () => {
+      const marker = window.scrollY + window.innerHeight * (config.activationRatio || 0.28);
+      let nextActiveIndex = 0;
+
       items.forEach((item, index) => {
-        const rect = item.section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight * 0.28) {
-          activeIndex = index;
+        const sectionTop = getAbsoluteTop(item.section);
+        const nextSectionTop = index < items.length - 1 ? getAbsoluteTop(items[index + 1].section) : Number.POSITIVE_INFINITY;
+
+        if (marker >= sectionTop && marker < nextSectionTop) {
+          nextActiveIndex = index;
         }
       });
-      setActive(activeIndex);
+
+      if (marker >= getAbsoluteTop(items[items.length - 1].section)) {
+        nextActiveIndex = items.length - 1;
+      }
+
+      return nextActiveIndex;
+    };
+
+    let ticking = false;
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+
+      window.requestAnimationFrame(() => {
+        setActive(resolveActiveIndex());
+        ticking = false;
+      });
     };
 
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
+    window.addEventListener("load", onScroll);
   };
 
   configs.forEach(mountTimeline);
