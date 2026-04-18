@@ -176,7 +176,7 @@ a:hover {
   display: grid;
   gap: 2rem;
   min-width: 0;
-  padding-left: 1.35rem;
+  padding-left: 14.5rem;
 }
 
 .home-subtitle-native {
@@ -187,7 +187,7 @@ a:hover {
 .home-timeline {
   position: absolute;
   inset: 0 auto 0 0;
-  width: 13rem;
+  width: 11.75rem;
 }
 
 .home-timeline__sticky {
@@ -222,10 +222,10 @@ a:hover {
 
 .home-timeline__current {
   margin: 0;
-  max-width: 10.5rem;
+  max-width: 9.5rem;
   color: var(--home-accent-purple-deep);
   font-family: var(--home-display-font);
-  font-size: clamp(1.45rem, 2.6vw, 2.05rem);
+  font-size: clamp(1.2rem, 2.1vw, 1.65rem);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -270,14 +270,14 @@ a:hover {
 .detail-timeline__item button {
   display: block;
   width: 100%;
-  padding: 0.45rem 0.65rem;
+  padding: 0.35rem 0.5rem;
   border: 0;
   background: transparent;
   color: rgba(20, 33, 61, 0.62);
   font-family: var(--home-display-font);
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.28;
   text-align: left;
   transition:
     color 0.2s ease,
@@ -1386,7 +1386,7 @@ a:hover {
 
 @media (max-width: 992px) {
   .home-shell {
-    padding-left: 1rem;
+    padding-left: 0;
   }
 
   .detail-shell {
