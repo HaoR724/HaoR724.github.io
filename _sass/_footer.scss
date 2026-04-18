@@ -53,7 +53,7 @@ footer.sticky-bottom {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.84),
     0 10px 18px rgba(120, 104, 206, 0.08);
-  color: var(--global-footer-text-color);
+  color: #2f2357;
 }
 
 .footer-stats__item i {
@@ -62,13 +62,13 @@ footer.sticky-bottom {
 }
 
 .footer-stats__label {
-  color: inherit;
-  opacity: 0.78;
+  color: #3f2f73;
+  font-weight: 600;
 }
 
 .footer-stats__value {
   min-width: 2.5rem;
-  color: #5c4ab2;
+  color: #3d2a8f;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
 }
