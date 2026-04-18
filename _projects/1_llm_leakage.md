@@ -5,22 +5,22 @@ description: 通过选项重构、log-probability 分析与 Isolation Forest 识
 img: assets/img/llm-leakage-logprob.png
 importance: 1
 category: 科研项目
+role: 核心成员
+period: 2024 - 至今
+keywords:
+  - LLM Eval
+  - Benchmark Leakage
+  - Isolation Forest
+  - Log-Probability
+project_links:
+  - label: 查看源码仓库
+    icon: fa-brands fa-github
+    url: https://github.com/HaoR724/LLM_eval
+  - label: 查看数据集
+    icon: fa-solid fa-database
+    url: https://github.com/HaoR724/LLM_eval/tree/main/data
+project_summary: 面向预训练数据不可观测的灰盒场景，构建基于选项重构与异常检测的大模型 benchmark 数据污染识别方法。
 ---
-
-**角色：** 核心成员  
-**时间：** 2024 - 至今
-
-本项目关注在大语言模型预训练数据不可观测的灰盒场景下，如何识别基准测试中的潜在数据污染问题。目标是为
-MMLU、CMMLU 等 benchmark 提供更加可靠的有效性评估依据。
-
-<div class="project-links">
-  <a class="project-link" href="https://github.com/HaoR724/LLM_eval" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-github"></i><span>查看源码仓库</span>
-  </a>
-  <a class="project-link" href="https://github.com/HaoR724/LLM_eval/tree/main/data" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-database"></i><span>查看数据集</span>
-  </a>
-</div>
 
 ## <i class="fa-solid fa-circle-question"></i> 研究问题
 

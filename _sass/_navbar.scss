@@ -57,6 +57,25 @@
 
   .navbar-brand {
     color: var(--global-text-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-family: "Roboto Slab", "Noto Serif SC", "STKaiti", serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  .navbar-brand::before {
+    display: inline-grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(199, 184, 255, 0.4), rgba(120, 104, 206, 0.14));
+    color: #5c4ab2;
+    content: "HL";
+    box-shadow: 0 10px 22px rgba(120, 104, 206, 0.12);
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -135,6 +154,19 @@
 
 .navbar .navbar-nav {
   gap: 0.35rem;
+}
+
+@media (max-width: 576px) {
+  .navbar.navbar-light .navbar-brand {
+    font-size: 0.94rem;
+    letter-spacing: 0.02em;
+  }
+
+  .navbar.navbar-light .navbar-brand::before {
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 0.76rem;
+  }
 }
 
 .navbar-toggler {

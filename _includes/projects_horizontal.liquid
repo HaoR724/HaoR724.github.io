@@ -9,11 +9,23 @@
         {% endif %}
         <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
           <div class="card-body">
+            {% if project.role %}
+              <p class="project-listing__meta">{{ project.role }}</p>
+            {% elsif project.period %}
+              <p class="project-listing__meta">{{ project.period }}</p>
+            {% endif %}
             <h3 class="card-title">
               <span class="project-card__icon"><i class="fa-solid fa-stars"></i></span>
               <span>{{ project.title }}</span>
             </h3>
             <p class="card-text">{{ project.description }}</p>
+            {% if project.keywords %}
+              <div class="project-listing__tags">
+                {% for keyword in project.keywords limit: 3 %}
+                  <span>{{ keyword }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
             <div class="row ml-1 mr-1 p-0">
               {% if project.github %}
                 <div class="github-icon">

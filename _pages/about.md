@@ -33,25 +33,23 @@ latest_posts:
       <p class="home-kicker">欢迎来到我的主页</p>
       <h2 class="home-hero-title">刘浩然</h2>
       <p class="home-signature">Haoran Liu</p>
-      <p class="home-lead">
-        我是东北大学秦皇岛分校计算机科学与技术专业本科生，专业排名前 <strong>7%</strong>，GPA 为
-        <strong>4.1/5.0</strong>，英语六级成绩 <strong>555</strong>。
+      <p class="home-hero-strapline">人工智能 / 大语言模型 / 评估检测</p>
+      <p class="home-lead home-lead--hero">
+        东北大学秦皇岛分校计算机科学与技术专业本科生，专业排名前 <strong>7%</strong>，GPA 为 <strong>4.1/5.0</strong>，
+        英语六级成绩 <strong>555</strong>。
       </p>
-      <p class="home-lead">
-        目前主要围绕<strong>大模型基准污染检测</strong>、<strong>大模型在 benchmark 上的数据泄露问题</strong>展开研究与工程实现，
+      <p class="home-lead home-lead--hero">
+        目前主要围绕<strong>大模型基准污染检测</strong>与<strong>大模型在 benchmark 上的数据泄露问题</strong>展开研究与工程实现，
         正在积极准备硕士/博士阶段的科研申请。
       </p>
+      <div class="home-meta-strip">
+        <span><i class="fa-solid fa-location-dot"></i>山东 济南</span>
+        <span><i class="fa-solid fa-building-columns"></i>东北大学秦皇岛分校</span>
+        <span><i class="fa-solid fa-envelope"></i>liuhaoran@stu.neuq.edu.cn</span>
+      </div>
       <div class="home-actions">
         <a class="home-action" href="{{ '/projects/' | relative_url }}"><i class="fa-solid fa-diagram-project"></i><span>查看项目</span></a>
         <a class="home-action" href="{{ '/cv/' | relative_url }}"><i class="fa-solid fa-file-lines"></i><span>查看简历</span></a>
-        <a
-          class="home-action"
-          href="{{ '/assets/pdf/刘浩然简历.pdf' | relative_url }}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-solid fa-download"></i><span>PDF 简历</span>
-        </a>
       </div>
       <div class="home-metrics">
         <div class="home-metric">
@@ -118,14 +116,16 @@ latest_posts:
         </div>
         <p class="home-project__meta">核心成员</p>
         <h3>大模型基准测试中的数据泄漏检测</h3>
-        <p>
-          面向预训练数据不可观测的灰盒场景，研究如何通过重构选择题选项顺序与分析 log-probability 分布，
-          识别大模型基准测试中的潜在污染问题。
-        </p>
-        <p>
-          项目中已加入论文研究过程图，包括对数概率分布、异常顺序识别、排行榜对比、案例分析与实验结果表，
-          能更直观地展示方法细节与效果。
-        </p>
+        <div class="home-project__summary">
+          <p><strong>研究问题</strong> 识别灰盒场景下 benchmark 评测中的潜在数据污染与泄露风险。</p>
+          <p><strong>核心方法</strong> 选项重构、log-probability 分析、Isolation Forest 异常检测。</p>
+          <p><strong>结果产出</strong> 已整理研究过程图、案例分析与结果对比，可直接查看仓库与数据集。</p>
+        </div>
+        <div class="home-project__tags">
+          <span>LLM Eval</span>
+          <span>Isolation Forest</span>
+          <span>Benchmark Leakage</span>
+        </div>
       </a>
       <a class="home-project" href="{% link _projects/2_autonomous_driving.md %}">
         <div class="home-project__gallery home-project__gallery--single">
@@ -133,15 +133,16 @@ latest_posts:
         </div>
         <p class="home-project__meta">核心算法设计</p>
         <h3>自动驾驶掉头决策与路径优化</h3>
-        <p>
-          面向双向双车道城市掉头场景，构建感知、预测、决策、规划、控制一体化模型。
-        </p>
-        <p>
-          结合 Kalman Filter、TTC 安全窗、Bezier 曲线与 MPC，实现兼顾安全性、舒适性与实时性的掉头控制策略。
-        </p>
-        <p>
-          详情页已加入系统流程图、仿真决策结果、路径曲线变化与参数对比表，并可直接跳转项目论文。
-        </p>
+        <div class="home-project__summary">
+          <p><strong>研究问题</strong> 面向复杂城市掉头场景，完成安全决策、路径规划与闭环控制协同。</p>
+          <p><strong>核心方法</strong> Kalman Filter、TTC 安全窗、Bezier 曲线、MPC 控制。</p>
+          <p><strong>结果产出</strong> 展示系统流程、仿真决策、路径优化与论文成果。</p>
+        </div>
+        <div class="home-project__tags">
+          <span>Kalman Filter</span>
+          <span>Bezier</span>
+          <span>MPC</span>
+        </div>
       </a>
       <a class="home-project" href="{% link _projects/3_uav_vision.md %}">
         <div class="home-project__gallery home-project__gallery--single">
@@ -149,15 +150,16 @@ latest_posts:
         </div>
         <p class="home-project__meta">大学生创新创业项目 / 核心开发</p>
         <h3>面向无人机图像的微小目标检测 SR-TOD</h3>
-        <p>
-          面向海面浪花、反光与复杂背景下的无人机微小目标检测问题，设计高精度视觉检测框架。
-        </p>
-        <p>
-          管线融合 SuperGlue 拼接、MSR 光照校正、SR-TOD 检测框架与 DGFE 特征增强模块，提升复杂场景下的目标表达能力。
-        </p>
-        <p>
-          详情页已加入整体技术流程图与环境适应性结果展示图，用于更直观地说明系统设计与检测效果。
-        </p>
+        <div class="home-project__summary">
+          <p><strong>研究问题</strong> 解决复杂海面与光照变化下无人机微小目标的漏检与误检问题。</p>
+          <p><strong>核心方法</strong> SuperGlue、MSR、SR-TOD 检测框架与 DGFE 特征增强。</p>
+          <p><strong>结果产出</strong> 已整理整体流程图与环境适应性结果图，说明系统设计与检测效果。</p>
+        </div>
+        <div class="home-project__tags">
+          <span>SR-TOD</span>
+          <span>DGFE</span>
+          <span>OpenCV</span>
+        </div>
       </a>
     </div>
   </section>

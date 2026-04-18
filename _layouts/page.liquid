@@ -33,6 +33,57 @@ layout: default
           </div>
         </aside>
         <div class="detail-shell__content detail-shell__content--project">
+          <section class="project-overview">
+            <div class="project-overview__intro">
+              <p class="project-overview__eyebrow"><i class="fa-solid fa-satellite-dish"></i><span>项目摘要</span></p>
+              {% if page.project_summary %}
+                <p class="project-overview__summary">{{ page.project_summary }}</p>
+              {% elsif page.description %}
+                <p class="project-overview__summary">{{ page.description }}</p>
+              {% endif %}
+            </div>
+            <div class="project-overview__grid">
+              {% if page.role %}
+                <div class="project-overview__card">
+                  <span class="project-overview__label">角色</span>
+                  <strong>{{ page.role }}</strong>
+                </div>
+              {% endif %}
+              {% if page.period %}
+                <div class="project-overview__card">
+                  <span class="project-overview__label">时间</span>
+                  <strong>{{ page.period }}</strong>
+                </div>
+              {% endif %}
+              {% if page.category %}
+                <div class="project-overview__card">
+                  <span class="project-overview__label">类型</span>
+                  <strong>{{ page.category }}</strong>
+                </div>
+              {% endif %}
+            </div>
+            {% if page.keywords %}
+              <div class="project-overview__tags" aria-label="项目关键词">
+                {% for keyword in page.keywords %}
+                  <span>{{ keyword }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if page.project_links %}
+              <div class="project-links">
+                {% for link in page.project_links %}
+                  <a
+                    class="project-link"
+                    href="{% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}<span>{{ link.label }}</span>
+                  </a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </section>
           {{ content }}
         </div>
       </div>

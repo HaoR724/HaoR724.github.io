@@ -5,13 +5,15 @@ description: 面向复杂海面环境的 SR-TOD 框架与 DGFE 模块设计。
 img: assets/img/uav-vision-pipeline.png
 importance: 3
 category: 科研项目
+role: 核心开发（大学生创新创业项目）
+period: 2024 - 至今
+keywords:
+  - SR-TOD
+  - DGFE
+  - SuperGlue
+  - Multi-Scale Retinex
+project_summary: 面向复杂海面背景与剧烈光照变化，构建兼顾预处理增强、特征提升与检测重建的微小目标视觉检测框架。
 ---
-
-**角色：** 核心开发（大学生创新创业项目）  
-**时间：** 2024 - 至今
-
-本项目面向无人机航拍场景中因目标尺度极小、海面背景复杂、光照变化剧烈而导致的漏检与误检问题，设计高精度
-检测框架。
 
 ## <i class="fa-solid fa-sitemap"></i> 系统流程
 
