@@ -33,7 +33,7 @@ latest_posts:
       <p class="home-kicker">欢迎来到我的主页</p>
       <h2 class="home-hero-title">刘浩然</h2>
       <p class="home-signature">Haoran Liu</p>
-      <p class="home-hero-strapline">人工智能 / 大语言模型 / 评估检测</p>
+      <p class="home-hero-strapline">人工智能 / 深度学习 / 软件开发 </p>
       <p class="home-lead home-lead--hero">
         东北大学秦皇岛分校计算机科学与技术专业本科生，GPA 为 <strong>4.1/5.0</strong>，英语六级成绩 <strong>555</strong>。
       </p>
@@ -67,7 +67,7 @@ latest_posts:
         <p><strong>邮箱</strong><br><a class="home-profile-email" href="mailto:liuhaoran@stu.neuq.edu.cn">liuhaoran@stu.neuq.edu.cn</a></p>
         <p><strong>GitHub</strong><br><a href="https://github.com/HaoR724" target="_blank" rel="noopener noreferrer">github.com/HaoR724</a></p>
         <p><strong>所在城市</strong><br>山东 济南</p>
-        <p><strong>关注方向</strong><br>人工智能，大语言模型，评估检测</p>
+        <p><strong>关注方向</strong><br>人工智能，深度学习，软件开发</p>
       </div>
     </div>
   </section>
@@ -82,8 +82,8 @@ latest_posts:
         <h3>研究兴趣</h3>
         <div class="home-tags">
           <span class="home-tag">人工智能</span>
-          <span class="home-tag">大语言模型</span>
-          <span class="home-tag">大模型评估</span>
+          <span class="home-tag">软件开发</span>
+          <span class="home-tag">深度学习  </span>
           <span class="home-tag">计算机视觉</span>
           <span class="home-tag">微小目标检测</span>
           <span class="home-tag">自动驾驶</span>
